@@ -1,0 +1,19 @@
+{
+  "title": "Metalsmith Nunjucks Component Library",
+  "description": "A collection of Nunjucks components for use with Metalsmith.",
+  "author": "werner@glinka.co",
+  "siteURL": "https://metalsmith-nunjucks-components.netlify.app/",
+  "siteOwner": "Werner Glinka",
+  "validate": {
+    "google": "",
+    "ms": ""
+  },
+  "social": {
+    "linkedIn": "",
+    "github": ""
+  },
+  "socialImage": "/assets/images/metalsmith/starter/social.png",
+  "imagePrefix": "https://res.cloudinary.com/glinkaco/image/upload/",
+  "imageDefault": "",
+  "audioPrefix": "https://res.cloudinary.com/glinkaco/video/upload/"
+}

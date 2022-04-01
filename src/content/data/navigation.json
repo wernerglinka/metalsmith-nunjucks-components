@@ -1,0 +1,14 @@
+{
+  "menu": [
+    {
+      "label": "Github",
+      "url": "https://github.com/",
+      "icon": "github"
+    },
+    {
+      "label": "Gitter",
+      "url": "https://gitter.im/metalsmith/community",
+      "icon": "gitter"
+    }
+  ]
+}

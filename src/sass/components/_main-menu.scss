@@ -1,0 +1,21 @@
+#main-menu {
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+      padding: 0 1em; 
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
