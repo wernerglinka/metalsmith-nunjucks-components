@@ -73,9 +73,9 @@ sections:
 
       Open the source code and start editing!
 
-      Your site is now running at http://localhost:3000!
+      Your site is now running at `http://localhost:3000`
 
-      Open the new-site directory in your code editor of choice and edit src/content/index.md. Save your changes and the browser will update in real time!
+      Open the new-site directory in your code editor of choice and edit `src/content/index.md`. Save your changes and the browser will update in real time!
 
     header: "h2"
     subTitle: ""

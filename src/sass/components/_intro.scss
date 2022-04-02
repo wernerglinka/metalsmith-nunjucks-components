@@ -14,19 +14,29 @@
     padding-bottom: 40px;
   }
 
-  .prose.hasColumns {
-    columns: 2;
-
-    p {
-      max-width: 95%;
-
+  .prose{
+    h3 {
+      margin-top: 0.5em;
+      
       &:first-of-type {
-        margin-top: 0;
+        
       }
     }
+  
+    &.hasColumns {
+      columns: 2;
 
-    @media (max-width: 650px) {
-      columns: 1;
+      p {
+        max-width: 95%;
+
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+
+      @media (max-width: 650px) {
+        columns: 1;
+      }
     }
   }
 }
