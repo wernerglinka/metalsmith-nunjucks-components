@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  Metalsmith company starter
+  Metalsmith Nunjucks Components
 </h1>
 
 Bootstrap your company website with this Metalsmith starter. This starter includes Markdown content and Nunjucks templating. Check out a [demo of this starter](https://metalsmith-company-starter.netlify.app/).
