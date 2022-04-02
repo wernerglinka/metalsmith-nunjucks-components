@@ -15,7 +15,7 @@
   {% endif %}
 
   {% if info.prose %}
-    <div>{{ info.prose | mdToHTML | safe }}</div>
+    <div class="prose">{{ info.prose | mdToHTML | safe }}</div>
   {% endif %}
 
 {% endmacro %}

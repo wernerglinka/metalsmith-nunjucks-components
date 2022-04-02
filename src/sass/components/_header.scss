@@ -11,14 +11,14 @@ header {
 
 
   .container {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media (max-width: 1520px) {
+    @media (max-width: 1280px) {
       max-width: 100%;
       padding: 0 40px;
     }

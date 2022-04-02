@@ -2,7 +2,7 @@
  * Page section Intro
  */
 
- .section-intro {
+.section-intro {
   padding-top: 0;
   padding-bottom: 0;
 
@@ -12,5 +12,21 @@
 
   &.paddingBottom {
     padding-bottom: 40px;
+  }
+
+  .prose {
+    columns: 2;
+
+    p {
+      max-width: 95%;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: 650px) {
+      columns: 1;
+    }
   }
 }
