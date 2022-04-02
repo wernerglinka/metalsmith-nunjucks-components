@@ -1,6 +1,6 @@
 ---
 layout: sections.njk
-bodyClasses: "section--starter-overview"
+bodyClasses: "section-starter-overview"
 
 seo:
   title: Sections Starter | Metalsmith Nunjucks Components
@@ -19,6 +19,7 @@ sections:
     backgroundColor: ""
     targetId: ""
     title: Metalsmith Site Starter
+    hasColumns: true
     prose: |-
       You need to download this starter to build your Metalsmith site with the sectioned page paradigm. The starter helps you to build fast, robust and adaptable websites. The knowledge and experience of many web developers are reflected in this system.
 
@@ -40,4 +41,49 @@ sections:
         isButton: true
         buttonStyle: "primary"
   
+  - component: intro
+    disabled: false
+    inContainer: true
+    marginTop: true
+    marginBottom: false
+    paddingTop: false
+    paddingBottom: false
+    backgroundColor: ""
+    targetId: ""
+    title: Getting Started
+    hasColumns: false
+    prose: |-
+      ### Create a Metalsmith site locally.
+
+      Clone the starter repository to create a new site.
+
+      ```bash
+      git clone https://github.com/wernerglinka/metalsmith-sections-starter.git new-site 
+      ```
+
+      ### Start developing.
+
+      Navigate into your new site’s directory and start it up.
+      
+      ```bash
+      cd new-site/
+      npm install
+      npm start
+      ```
+
+      Open the source code and start editing!
+
+      Your site is now running at http://localhost:3000!
+
+      Open the new-site directory in your code editor of choice and edit src/content/index.md. Save your changes and the browser will update in real time!
+
+    header: "h2"
+    subTitle: ""
+    hasCtas: false
+    ctas:
+      - url: ""
+        label: ""
+        isExternal: true
+        isButton: true
+        buttonStyle: "primary"
 ---

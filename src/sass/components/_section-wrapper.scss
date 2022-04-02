@@ -3,6 +3,14 @@
     max-width: 1200px;
     margin: 0 auto;
 
+    &.marginTop {
+      margin-top: 60px;
+    };
+
+    &.marginBottom {
+      margin-bottom: 60px;
+    };
+
     @media (max-width: 1280px) {
       max-width: 100%;
       padding: 0 40px;
