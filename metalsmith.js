@@ -68,6 +68,7 @@ Metalsmith(__dirname)
     metadata({
       site: "data/site.json",
       nav: "data/navigation.json",
+      social: "data/social-links.json",
     })
   )
 

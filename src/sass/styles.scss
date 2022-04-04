@@ -7,6 +7,7 @@
 @use "./components/header";
 @use "./components/footer";
 @use "./components/main-menu";
+@use "./components/social-links";
 @use "./components/section-wrapper";
 @use "./components/home-banner";
 @use "./components/banner";
@@ -18,4 +19,5 @@
 @use "./components/blog";
 @use "./components/gitter-invite";
 @use "./components/image";
+@use "./components/hamburger";
 

@@ -1,14 +1,16 @@
 {
   "menu": [
     {
-      "label": "Github",
-      "url": "https://github.com/",
-      "icon": "github"
+      "label": "Starter Website",
+      "url": "/sections-starter"
     },
     {
-      "label": "Gitter",
-      "url": "https://gitter.im/metalsmith/community",
-      "icon": "gitter"
+      "label": "Page Sections",
+      "url": "/page-sections"
+    },
+    {
+      "label": "Base Components",
+      "url": "/base-components"
     }
   ]
 }

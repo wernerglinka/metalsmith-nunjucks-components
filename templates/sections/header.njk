@@ -8,19 +8,38 @@
         <a class="js-home-link" href="/">{{ icon(iconSource) }}</a>
       </div>
 
+      {{ socialLinks | dump }}
+
+      <div id="social-links">
+        <ul>
+          {% for socialLink in social.links %}
+            <li>
+              <div>
+                {% set path = socialLink.url %}
+                {% set iconSource = socialLink.icon %}
+                <a href={{ socialLink.url}} class="{{ path | trimSlashes }}" target="_blank" rel="noopener noreferrer">{{ icon(iconSource) }}</a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
       <div id="main-menu" class="js-main-menu">
         <ul>
           {% for menuItem in nav.menu %}
             <li>
               <div>
                 {% set path = menuItem.url %}
-                {% set iconSource = menuItem.icon %}
-                <a href={{ menuItem.url}} class="{{ path | trimSlashes }}" target="_blank" rel="noopener noreferrer">{{ icon(iconSource) }}</a>
+                <a href={{ menuItem.url}} class="{{ path | trimSlashes }}">{{ menuItem.label }}</a>
               </div>
             </li>
           {% endfor %}
         </ul>
       </div>
+
+      <button id="hamburger" class="js-hamburger">
+        <span></span>
+      </button>
 
     </div>
   </header>
