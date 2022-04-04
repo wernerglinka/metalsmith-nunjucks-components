@@ -5,10 +5,11 @@
 
 <section class="section-home-banner {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
   <div class="content">
-    {% set info = params %}
 
     <div class="prose">
-      {{ text(info)}}
+      <h1>{{ params.title }}</h1>
+      <p class="sub-title">{{ params.subTitle }}</p>
+      <p class="introduction">{{ params.prose }}</p>
     </div>
 
     <a class="scroll-hint" href="#banner-bottom">{{ icon("arrow-down") }}</a>

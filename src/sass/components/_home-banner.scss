@@ -7,37 +7,69 @@
   padding-top: 30vh;
   position: relative;
   
+  .prose {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 620px ) {
+      flex-direction: column;
+    }
+  }
   h1 {
-    text-align: center;
+    text-align: right;
     color: #000;
     font-family: "Roboto Condensed", arial, sans-serif;
     font-weight: 700;
     font-size: 5vw;
-    letter-spacing: -0.05em;
+    line-height: 0.9;
+    
     margin: 0;
 
-    @media (max-width: 600px) {
-      font-size: 55px;
+    @media (max-width: 620px) {
+      font-size: 40px;
+      text-align: left;
+      margin-left: 40px;
+    }
+    @media (max-width: 400px) {
+      font-size: 32px;
+      margin-left: 0;
     }
   }
   .sub-title {
     color: #717999;
     font-size: 3vw;
-    font-weight: 700;
-    margin: 0 0 0 25%;
+    font-weight: 300;
     max-width: 60%;
     line-height: 1;
+    margin-top: 1.5em;
 
-    @media (max-width: 600px) {
+    @media (max-width: 620px) {
       font-size: 25px;
+      margin: 0 0 0 80px;
+      max-width: 100%
     }
+    @media (max-width: 400px) {
+      font-size: 20px;
+      margin: 0 0 0 30px;
+      text-align: right;
+    }
+  }
+
+  .introduction {
+    position: absolute;
+    top: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
   }
 
   .scroll-hint {
     display: block;
     height: 50px;
     width: 50px;
-    margin: 50px auto 0;
+    margin: 200px auto 0;
 
     &:hover {
       border: none;
@@ -49,8 +81,8 @@
 
     svg {
       stroke: #DCDEE6;
-    fill: transparent;
-    transition: stroke .5s ease-in-out;
+      fill: transparent;
+      transition: stroke .5s ease-in-out;
     }
     
     &:hover svg {
@@ -60,7 +92,7 @@
 
   #banner-bottom {
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     opacity: 0;
   }
 }

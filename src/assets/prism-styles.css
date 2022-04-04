@@ -139,3 +139,19 @@
    cursor: help;
  }
  
+ pre[class*="language-"] {
+  background: #fafafa;
+  position: relative;
+  font-size: 14px;
+}
+pre[class*="language-javascript"]:after {
+  position: absolute;
+  top: 0;
+  right:0;
+  content: "js";
+  padding: 5px;
+  background-color: #f8f8f8;
+}
+.token.operator {
+  background: transparent;
+}
