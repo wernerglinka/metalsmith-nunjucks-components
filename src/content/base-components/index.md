@@ -13,7 +13,7 @@ sections:
     disabled: false
     inContainer: true
     marginTop: false
-    marginBottom: false
+    marginBottom: true
     paddingTop: false
     paddingBottom: false
     backgroundColor: ""
@@ -36,7 +36,7 @@ sections:
     disabled: false
     inContainer: true
     marginTop: false
-    marginBottom: false
+    marginBottom: true
     paddingTop: false
     paddingBottom: false
     backgroundColor: ""

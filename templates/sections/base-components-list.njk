@@ -1,3 +1,5 @@
+{% from "../partials/icon.njk" import icon %}
+
 <section class="section-base-components-list {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
   <div class="container">
     <ul class="cards-list">
@@ -15,6 +17,8 @@
             <h4>{{ item.name }}</h4>
             <p>{{ item.description }}</p>
           </div>
+
+          {{ icon("arrow-right") }}
         </a>
       </li>
       {% endfor %}

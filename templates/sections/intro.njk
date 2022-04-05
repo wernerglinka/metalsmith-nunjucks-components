@@ -3,11 +3,10 @@
 
 <section class="section-intro {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
   <div class="content">
-    {% set info = params.text %}
-    {{ text(info) }}
+    {{ text(params.text) }}
 
-    {% if info.hasCtas %}
-        {{ ctas(info) }}
-      {% endif %}
+    {% if params.hasCtas %}
+      {{ ctas(params.ctas) }}
+    {% endif %}
   </div>
 </section>

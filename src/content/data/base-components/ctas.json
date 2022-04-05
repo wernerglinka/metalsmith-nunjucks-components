@@ -1,8 +1,8 @@
 [
   {
     "name": "CTAs",
-    "thumbnail": "https://i.imgur.com/qkKy8sH.png",
+    "thumbnail": "v1649192738/metalsmith-components/base-thumbnails/ctas-tn_trytvi.jpg",
     "description": "Renders multiple ctas as either buttons or text links",
-    "link:": "/base-components/ctas"
+    "link": "/base-components/ctas"
   }
 ]

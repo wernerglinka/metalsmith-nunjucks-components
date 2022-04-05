@@ -3,6 +3,6 @@
     "name": "Video",
     "thumbnail": "v1649183715/metalsmith-components/base-thumbnails/video-tn_qbktsw.jpg",
     "description": "Video component with thumbnail, plays videos either inline or in a modal. Requires the modal base component.",
-    "link:": "/base-components/video"
+    "link": "/base-components/video"
   }
 ]
