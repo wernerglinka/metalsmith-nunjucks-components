@@ -8,10 +8,11 @@ const drafts = require("@metalsmith/drafts");
 const permalinks = require("@metalsmith/permalinks");
 const sass = require("@metalsmith/sass");
 const postcss = require("@metalsmith/postcss");
+const metadata = require("@metalsmith/metadata");
 const when = require("metalsmith-if");
 const htmlMinifier = require("metalsmith-html-minifier");
 const assets = require("metalsmith-static-files");
-const metadata = require("metalsmith-metadata");
+
 const prism = require("metalsmith-prism");
 
 const marked = require("marked");
@@ -66,9 +67,10 @@ Metalsmith(__dirname)
 
   .use(
     metadata({
-      site: "data/site.json",
-      nav: "data/navigation.json",
-      social: "data/social-links.json",
+      site: "src/content/data/site.json",
+      nav: "src/content/data/navigation.json",
+      social: "src/content/data/social-links.json",
+      components: "src/content/data/base-components",
     })
   )
 
@@ -122,6 +124,12 @@ Metalsmith(__dirname)
   )
 
   .use(when(isProduction, htmlMinifier()))
+
+  .use(function(files, metalsmith, done) {
+    console.log(metalsmith.metadata());
+    done();
+  })
+
   .build(err => {
     if (err) {
       throw err;

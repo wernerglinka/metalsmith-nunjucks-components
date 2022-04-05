@@ -1,10 +1,10 @@
 ---
 layout: sections.njk
-bodyClasses: "components-overview"
+bodyClasses: "text-component"
 
 seo:
-  title: Base Components | Metalsmith Nunjucks Components
-  description: "A collection of Nunjucks components for use with Metalsmith"
+  title: Text Components | Metalsmith Nunjucks Components
+  description: "A component that renders a header, sub title and some text. All are optional"
   socialImage: "v1648838418/components-library/ms-nj-social-image_jb9yox.jpg"
   canonicalOverwrite: ""
 
@@ -18,7 +18,7 @@ sections:
     paddingBottom: false
     backgroundColor: ""
     targetId: ""
-    title: Base Components
+    title: Text Component
     prose: |-
       
 

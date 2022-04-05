@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Image",
+    "thumbnail": "v1649183715/metalsmith-components/base-thumbnails/image-tn_fwzueo.jpg",
+    "description": "Image component, renders a low-resolution image and then lazy-loads a high-resolution image when the image is in or enters the viewport.",
+    "link:": "/base-components/image"
+  }
+]

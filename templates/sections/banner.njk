@@ -7,13 +7,11 @@
 
 <section class="section-banner {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
   <div class="content columns">
-    {% set info = params %}
-
     <div class="prose">
-      {{ text(info)}}
+      {{ text(params.text)}}
 
       {% if params.hasCtas %}
-        {{ ctas(info) }}
+        {{ ctas(params.ctas) }}
       {% endif %}
     </div>
 

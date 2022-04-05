@@ -3,7 +3,7 @@
 
 <section class="section-intro {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
   <div class="content">
-    {% set info = params %}
+    {% set info = params.text %}
     {{ text(info) }}
 
     {% if info.hasCtas %}
