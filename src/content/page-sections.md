@@ -9,7 +9,7 @@ seo:
   canonicalOverwrite: ""
 
 sections:
-  - component: intro
+  - section: intro
     disabled: false
     inContainer: true
     marginTop: false

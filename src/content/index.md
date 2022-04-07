@@ -10,7 +10,7 @@ seo:
   canonicalOverwrite: ""
 
 sections:
-  - component: home-banner
+  - section: home-banner
     disabled: false
     animateSection: false
     inContainer: true
@@ -35,7 +35,7 @@ sections:
         isButton: true
         buttonStyle: "primary"
   
-  - component: intro
+  - section: intro
     disabled: false
     inContainer: true
     marginTop: false
@@ -52,14 +52,15 @@ sections:
 
         Let's have a look at what that looks like. 
         
-        This frontmatter example shows a hero section that is composed with several base components. The banner has a title, sub title, some text and an image. It also has the option of using multiple call-to-actions.
+        This example shows a simplified media section that is used as a hero banner and is composed of base components. The media section has a title, sub title, some text and an image. It also has the option of using multiple call-to-actions.
         
         ```yaml
-        component: banner
-        title: Metalsmith Company Starter
-        header: "h1"
-        subTitle: Using "sectioned" pages to build flexible page layouts
-        prose: This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites. [The source code for this site can be found on GitHub](https://github.com/wernerglinka/metalsmith-company-starter).
+        section: media
+        text:
+          title: Metalsmith Company Starter
+          header: "h1"
+          subTitle: Using "sectioned" pages to build flexible page layouts
+          prose: This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites. [The source code for this site can be found on GitHub](https://github.com/wernerglinka/metalsmith-company-starter).
         hasCtas: true
         ctas:
           - url: "https://github.com/wernerglinka/ms-components"
@@ -76,19 +77,19 @@ sections:
           caption: "Photo by Josh Hild from Pexels"
         ```
       
-        The banner template that consumes this data looks like this. Note that the template calls base components to render the text, image and the CTAs.
+        A simplified media template that consumes this data looks like this. Note that the template calls base components to render the text, image and the CTAs.
 
         ```html
         {% from "../partials/ctas.njk" import ctas %}
         {% from "../partials/responsive-image.njk" import responsiveImage %}
         {% from "../partials/text.njk" import text %}
 
-        <section class="section-banner>
-          <div class="content columns">
+        <section class="section-media>
+          <div class="content">
             <div class="prose">
-              {{ text(params)}}
+              {{ text(params.text)}}
               {% if params.hasCtas %}
-                {{ ctas(params) }}
+                {{ ctas(params.ctas) }}
               {% endif %}
             </div>
 
@@ -101,21 +102,53 @@ sections:
 
         And this is the rendered page section:
 
-  - component: image
-    disabled: false
-    animateSection: false
+  - section: media
+    sectionClass: "example"
+    animateSection: true
     inContainer: true
+    hasBackground: false
+    bgColor: ""
+    bgIsDark: false
     marginTop: true
-    marginBottom: false
+    marginBottom: true
     paddingTop: false
     paddingBottom: false
-    backgroundColor: ""
-    targetId: ""
+    reverse: false
+    title: Metalsmith Company Starter
+    header: "h1"
+    subTitle: Using "sectioned" pages to build flexible page layouts
+    prose: This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites. [The source code for this site can be found on GitHub](https://github.com/wernerglinka/metalsmith-company-starter).
+    hasCtas: true
+    ctas:
+      - url: "https://github.com/wernerglinka/ms-components"
+        label: Get the Starter
+        isExternal: true
+        isButton: true
+        buttonStyle: "primary"
+        isVideoTrigger: false
+        videoId: ""
+    mediaType: Image
+    video:
+      src: youtube
+      id: ""
+      tn: ""
+      aspectRatio: ""
+      caption:
     image:
-      src: "v1649092749/metalsmith-components/banner-example_nwvnre.png"
-      aspectRatio: "38.4"
-      caption: ""
-      maxWidth: 1100
-      alignment: center
-      hasBorder: true
+      src: "v1649349741/metalsmith-components/corporate_jwbmek.jpg"
+      alt: "Metalsmith Javascript"
+      aspectRatio: "56.25"
+      caption: "Photo by Josh Hild from Pexels"
+    lottieData:
+      src: ""
+      control:
+        autoplay: true
+        loop: true
+    icon: ""
+    audio:
+      bgImage: ""
+      aspectRatio: ""
+      ogg: ""
+      mpeg: ""
+      caption:
 ---

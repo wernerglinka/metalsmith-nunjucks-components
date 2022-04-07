@@ -1,0 +1,31 @@
+@use '../base/variables' as *;
+
+.section-media.example {
+    max-width: var(--max-width-desktop);
+    margin: 0 auto;
+    padding: 20px; 
+    border: 2px solid #f0f0f0;  
+
+    h1 {
+      text-transform: capitalize;
+      line-height: 1;
+      font-weight: 300;
+      margin: 0 0 10px !important;
+
+      @media(max-width: $tablet-breakpoint) {
+        font-size: 2rem;
+      }
+    }
+
+    .prose {
+      padding-right: 30px;
+
+      @media(max-width: $tablet-breakpoint) {
+        padding-right: 0;
+      }
+    }
+
+    .caption {
+      margin-top: 10px;
+    }
+}

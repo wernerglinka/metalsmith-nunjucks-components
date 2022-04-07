@@ -9,7 +9,7 @@ seo:
   canonicalOverwrite: ""
 
 sections:
-  - component: intro
+  - section: intro
     disabled: false
     inContainer: true
     marginTop: false
@@ -32,7 +32,7 @@ sections:
         isButton: true
         buttonStyle: "primary"
   
-  - component: base-components-list
+  - section: base-components-list
     disabled: false
     inContainer: true
     marginTop: false

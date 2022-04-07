@@ -7,7 +7,7 @@
 
     {% for section in sections %}
 
-      {% set name = section.component %}
+      {% set name = section.section %}
       {% set params = section %}
       
       <div class="section-wrapper{% if section.inContainer %} inContainer{% endif %}{% if section.marginTop %} marginTop{% endif %}{% if section.marginBottom %} marginBottom{% endif %} ">

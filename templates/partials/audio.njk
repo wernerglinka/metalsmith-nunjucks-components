@@ -2,12 +2,6 @@
 
 {% macro audio(audioData, siteMeta) %}
   <div class="audio"  >
-    {% set image = {
-      src: audioData.bgImage,
-      alt: "",
-      aspectRatio: audioData.aspectRatio
-    } %}
-    {{ responsiveImage(image, siteMeta) }}
     <audio controls>
       <source src={{siteMeta.audioPrefix}}{{audioData.ogg}} type="audio/ogg"/>
       <source src={{siteMeta.audioPrefix}}{{audioData.mpeg}} type="audio/mpeg"/>

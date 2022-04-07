@@ -31,7 +31,7 @@
     font-style: italic;
     margin-bottom: 40px;
 
-    @media (max-width: $tablet-breakpoint) {
+    @media (max-width: var(--max-width-tablet)) {
       font-size: 14px;
     }
   }

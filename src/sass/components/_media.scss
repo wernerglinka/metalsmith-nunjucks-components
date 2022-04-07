@@ -1,7 +1,6 @@
 /**
  * Page section Media
  */
-
  .section-media {
   padding-top: 0;
   padding-bottom: 0;
@@ -15,11 +14,10 @@
   }
 
   .content {
-    padding: 50px 0;
+    display: flex;
 
     @media (max-width: 767px) {
       flex-direction: column-reverse;
-      padding-top: 0;
     }
 
     > div {

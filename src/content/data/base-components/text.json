@@ -2,7 +2,7 @@
   {
     "name": "Text",
     "thumbnail": "v1649192738/metalsmith-components/base-thumbnails/text-tn_hiwysu.jpg",
-    "description": "Text component with title, subtitle, and markdown text. Tth title html tag is determined by string header, e.g. h1, h2...",
+    "description": "Text component with title, subtitle, and markdown text. The title <html> tag is determined by string header, e.g. h1, h2...",
     "link": "/base-components/text"
   }
 ]

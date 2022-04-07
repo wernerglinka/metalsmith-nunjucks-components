@@ -22,6 +22,7 @@
       padding: 10px 0;
       text-transform: uppercase;
       font-weight: 700;
+      color: var(--text-color);
 
       &:hover {
         color: red;
@@ -41,5 +42,5 @@
 [pagename="sections-starter"] .sections-starter,
 [pagename="page-sections"] .page-sections,
 [pagename="base-components"] .base-components {
-  color: #ccc;
+  color: var(--link-color-inactive) !important;
 }

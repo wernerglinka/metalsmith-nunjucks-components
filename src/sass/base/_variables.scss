@@ -1,3 +1,51 @@
-$header-color: #333;
+/*
+ * Base variables
+ */
 
+/*
+ * Colors
+ */
+:root {
+  --black: #000;
+  --header-color: #14213d;
+  --complement-color: #717999;
+  --complement-color-dark: #dcdee6;
+  --text-color: #626262;
+  --link-color: #fca311;
+  --link-color-inactive: #ccc;
+  --highlight: #e5e5e5;
+  --white: #fff;
+  --button-color-primary: #14213d;
+}
+
+/*
+ * Layout
+ */
+:root {
+  --container-width: 1200px;
+  --gutter-width: 20px;
+  --max-width: 100%;
+  --max-width-tablet: 768px;
+  --max-width-desktop: 1024px;
+  --max-width-desktop-large: 1440px;
+}
+
+/*
+ * Other
+ */
+:root {
+  --box-shadow-default: 0 30px 60px -10px rgba(0, 0, 0, 0.2), 0 18px 36px -18px rgba(0, 0, 0, 0.22);
+}
+
+// css variables do not work withj media queries
 $tablet-breakpoint: 768px;
+
+/*
+ * Mixins
+ */
+@mixin glass-panel {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(5px);
+}
+

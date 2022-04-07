@@ -1,10 +1,10 @@
 ---
 layout: sections.njk
-bodyClasses: "text-component"
+bodyClasses: "audio-component"
 
 seo:
-  title: Text Component | Metalsmith Nunjucks Components
-  description: "A component that renders a header, sub title and some text. All are optional"
+  title: Audio Component | Metalsmith Nunjucks Components
+  description: "A component that renders audio controls with an optional background image."
   socialImage: "v1648838418/components-library/ms-nj-social-image_jb9yox.jpg"
   canonicalOverwrite: ""
 
@@ -19,20 +19,18 @@ sections:
     backgroundColor: ""
     targetId: ""
     text:
-      title: Text
+      title: Audio
       header: "h1"
-      subTitle: "A base component that renders a title, sub title and a body of markdown"
+      subTitle: "A base component that renders audio controls for an audio source"
       prose: |-
-        The title tag can be set with the `header` property. The prose or body text is written in [marked](https://marked.js.org/) markdown.
+        The component plays audio formats `mpg3` and `ogg`.
 
+        ### Usage
+        
         ```yaml
-          text:
-            title: Text
-            header: "h1"
-            subTitle: "A base component that renders a title, sub title and a body of text"
-            prose: |-
-              The title tag can be set with the `header` property....
-            
+          audio:
+            ogg: "v1639165770/gatsby4mdx/audio/sample-ogg-file_fmjjrl.ogg"
+            mpeg: "v1639165774/gatsby4mdx/audio/sample-mp3-file_hwsxlc.mp3"
         ```
 
         For an usage example see the [media section](/page-sections/media).
@@ -47,7 +45,7 @@ sections:
     hasCtas: true
     ctas:
       - url: "https://github.com"
-        label: "Download Text Component"
+        label: "Download Audio Component"
         isExternal: true
         isButton: true
         buttonStyle: "primary"
