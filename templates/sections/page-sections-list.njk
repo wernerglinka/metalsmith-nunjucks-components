@@ -1,0 +1,27 @@
+{% from "../partials/icon.njk" import icon %}
+
+<section class="section-page-sections-list {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+  <div class="container">
+    <ul class="cards-list">
+      {% for item in pageSections %}
+
+      {# assemble image source #}
+      {% set imageSRC = site.imagePrefix ~ "w_280,c_fill,g_auto,f_auto/" ~ item.thumbnail %}
+
+      <li>
+        <a href="{{ item.link }}" class="card">
+          <div class="image-wrapper">
+            <img src="{{ imageSRC }}" alt="{{ item.name }}" />
+          </div>
+          <div class="prose">
+            <h4>{{ item.name }}</h4>
+            <p>{{ item.description }}</p>
+          </div>
+
+          {{ icon("arrow-right") }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

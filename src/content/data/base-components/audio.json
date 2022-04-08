@@ -2,7 +2,7 @@
   {
     "name": "Audio",
     "thumbnail": "v1649183715/metalsmith-components/base-thumbnails/audio-tn_v01csd.jpg",
-    "description": "Audio component with background image. Plays mpeg and ogg files.",
+    "description": "Audio component renders the audio controls, plays mpeg and ogg files.",
     "link": "/base-components/audio"
   }
 ]

@@ -71,6 +71,7 @@ Metalsmith(__dirname)
       nav: "src/content/data/navigation.json",
       social: "src/content/data/social-links.json",
       components: "src/content/data/base-components",
+      pageSections: "src/content/data/page-sections",
     })
   )
 

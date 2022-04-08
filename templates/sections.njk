@@ -12,7 +12,7 @@
       
       <div class="section-wrapper{% if section.inContainer %} inContainer{% endif %}{% if section.marginTop %} marginTop{% endif %}{% if section.marginBottom %} marginBottom{% endif %} ">
         {# site and components are metadata #}
-        {{ component(name, params, site, components) }}
+        {{ component(name, params, site, components, pageSections) }}
       </div>
 
     {% else %}

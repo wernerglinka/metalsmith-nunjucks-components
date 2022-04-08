@@ -6,16 +6,22 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 30vh;
+  padding-top: 30vw;
   position: relative;
+
+  @media (max-width: 600px ) {
+    height: auto;
+    padding-top: 150px;
+  }
   
   .prose {
     position: relative;
     display: flex;
     justify-content: center;
 
-    @media (max-width: 620px ) {
+    @media (max-width: 600px ) {
       flex-direction: column;
+      margin-bottom: 100px;
     }
   }
   h1 {
@@ -29,7 +35,7 @@
       font-size: 65px;
     }
 
-    @media (max-width: 620px) {
+    @media (max-width: 600px) {
       font-size: 40px;
       text-align: left;
       margin-left: 40px;
@@ -48,7 +54,7 @@
     @media (min-width: 1300px) {
       font-size: 39px;
     }
-    @media (max-width: 620px) {
+    @media (max-width: 600px) {
       font-size: 25px;
       margin: 0 0 0 80px;
       max-width: 100%
@@ -64,8 +70,12 @@
     position: absolute;
     top: 100%;
     max-width: 500px;
-    font-size: 18px;
+    font-size: 20px;
     @include glass-panel;
+
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
   }
 
   .scroll-hint {
@@ -79,7 +89,6 @@
     }
 
     @media (max-width: 600px) {
-      font-size: 16px;
       margin-top: 250px;
     }
 
@@ -87,6 +96,10 @@
       stroke: var(--complement-color);
       fill: transparent;
       transition: stroke .5s ease-in-out;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
     
     &:hover svg {

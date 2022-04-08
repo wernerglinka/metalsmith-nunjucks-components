@@ -1,0 +1,42 @@
+.section-tabbed-sections {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &.paddingTop {
+    padding-top: 40px;
+  }
+
+  &.paddingBottom {
+    padding-bottom: 40px;
+  }
+
+  .tabs {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 50px;
+    
+
+    a {
+      display: block;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--link-color);
+      margin-right: 20px;
+      transition: all 0.5s ease-in-out;
+
+      &:hover {
+        background-color: var(--link-color);
+        color: var(--white);
+        text-decoration: none;
+      }
+    }
+
+    .active a {
+      background-color: var(--link-color);
+      color: var(--white);
+      text-decoration: none;
+    }
+  }
+
+}

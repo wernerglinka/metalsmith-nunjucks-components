@@ -31,6 +31,8 @@ sections:
           icon: "arrow-down"  
         ```
 
+        - **icon** - The icon file name without the file extension.
+
         A typical svg files looks like this.
 
         ```html

@@ -41,6 +41,7 @@ sections:
         - **aspectRatio** - the aspect ratio of the image. Used to prevent any content movement when the high-res image in inserted into the DOM.
         - **caption** - used it to give credit or whatever makes sense.
 
+        For an usage example see the [media section](/page-sections/media).
 
         ## Package
         The download package includes the following:
@@ -53,7 +54,7 @@ sections:
     hasCtas: true
     ctas:
       - url: "https://github.com"
-        label: "Download Text Component"
+        label: "Download Video Component"
         isExternal: true
         isButton: true
         buttonStyle: "primary"

@@ -45,7 +45,7 @@ sections:
     backgroundColor: ""
     targetId: ""
     text:
-      title: Overview
+      title: ""
       header: "h2"
       prose: |-
         Metalsmith Components embrace a modular page building paradigm. Rather than using the markdown body for all content, a structured content model is defined in the page fontmatter. Frontmatter objects define pages section templates. As a result page layout files are much shorter, as the code is organized into smaller component files, components can easily be reused on any page. 
@@ -129,6 +129,7 @@ sections:
         videoId: ""
     mediaType: Image
     video:
+      inline: false
       src: youtube
       id: ""
       tn: ""
