@@ -1,8 +1,18 @@
 {
   "links": [
     {
+      "label": "Metalsmith",
+      "url": "https://www.metalsmith.io/",
+      "icon": "metalsmith"
+    },
+    {
+      "label": "Twitter",
+      "url": "https://twitter.com/metalsmithio",
+      "icon": "twitter"
+    },
+    {
       "label": "Github",
-      "url": "https://github.com/",
+      "url": "https://github.com/wernerglinka/metalsmith-nunjucks-components",
       "icon": "github"
     },
     {

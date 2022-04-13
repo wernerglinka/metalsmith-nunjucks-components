@@ -45,14 +45,45 @@ sections:
     backgroundColor: ""
     targetId: ""
     text:
-      title: ""
+      title: "Build better pages with Metalsmith Components"
       header: "h2"
       prose: |-
         Metalsmith Components embrace a modular page building paradigm. Rather than using the markdown body for all content, a structured content model is defined in the page fontmatter. Frontmatter objects define pages section templates. As a result page layout files are much shorter, as the code is organized into smaller component files, components can easily be reused on any page. 
 
-        Let's have a look at what that looks like. 
-        
-        This example shows a simplified media section that is used as a hero banner and is composed of base components. The media section has a title, sub title, some text and an image. It also has the option of using multiple call-to-actions.
+        Let's have a look at what that looks like. Here is how this page is build:
+
+        ```yaml
+        ---
+        layout: sections.njk
+        bodyClasses: "home"
+        bodyBackgroundImage: "v1648837357/components-library/components-background_mfr1ag.jpg"
+
+        seo:
+          title: Metalsmith Nunjucks Components Library
+          description: "A collection of Nunjucks components for use with Metalsmith"
+          socialImage: "v1648838418/components-library/ms-nj-social-image_jb9yox.jpg"
+          canonicalOverwrite: ""
+
+        sections:
+          - section: home-banner
+            ...
+          - section: intro
+            
+          - section: media
+            ...
+        ---
+        ```
+        - `layout` is used to determine which template to use for the page.
+        - `bodyClasses` is used to add classes to the body tag. 
+        - `bodyBackgroundImage` sets the background image for the body. 
+        - The `seo` object contains the SEO metadata for the page. 
+        - The `sections` array contains the sections to be rendered on the page.
+
+        Here we see that the page is built with a `sections` array. Let's have a closer look at the media section.
+
+        ## Composable Sections
+
+        This following code example shows a simplified media section, which is composed of the base components `text`, `ctas` and `image`. 
         
         ```yaml
         section: media
@@ -114,10 +145,11 @@ sections:
     paddingTop: false
     paddingBottom: false
     reverse: false
-    title: Metalsmith Company Starter
-    header: "h1"
-    subTitle: Using "sectioned" pages to build flexible page layouts
-    prose: This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites. [The source code for this site can be found on GitHub](https://github.com/wernerglinka/metalsmith-company-starter).
+    text:
+      title: Metalsmith Company Starter
+      header: "h1"
+      subTitle: Using "sectioned" pages to build flexible page layouts
+      prose: This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites. [The source code for this site can be found on GitHub](https://github.com/wernerglinka/metalsmith-company-starter).
     hasCtas: true
     ctas:
       - url: "https://github.com/wernerglinka/ms-components"
@@ -152,4 +184,29 @@ sections:
       ogg: ""
       mpeg: ""
       caption:
+
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: true
+    paddingTop: true
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: ""
+      header: "h2"
+      prose: |-
+        This website code is available at [GitHub](https://github.com/wernerglinka/metalsmith-nunjucks-components). 
+
+    hasCtas: true
+    ctas:
+      - url: "/sections-starter/"
+        label: Get Started
+        isExternal: false
+        isButton: true
+        buttonStyle: "secondary"
+        isVideoTrigger: false
+        videoId: ""
 ---

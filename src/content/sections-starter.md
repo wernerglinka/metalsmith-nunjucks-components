@@ -22,7 +22,7 @@ sections:
       title: Metalsmith Site Starter
       hasColumns: true
       prose: |-
-        You need to download this starter to build your Metalsmith site with the sectioned page paradigm. The starter helps you to build fast, robust and adaptable websites. The knowledge and experience of many web developers are reflected in this system.
+        Download this starter to expedite buildiing your Metalsmith site with the sectioned page paradigm. The starter helps you to build fast, robust and adaptable websites. The knowledge and experience of many web developers are reflected in this system.
 
         Content is written in [Markdown](https://marked.js.org/) and templates are coded with [Nunjucks](https://mozilla.github.io/nunjucks/). All page content is defined in the frontmatter of each page. There are no long-text markdown sections. Rather content text area fields in the page frontmatter are compiled into HTML with a Nunjucks filter. 
 
@@ -31,6 +31,8 @@ sections:
         Page sections are defined as YAML objects in the frontmatter. This approach lends itself to an easy integration with headless CMSs like NetlifyCMS or forestry.io. Get more [detailed explanations in this blogpost](https://glinka.co/blog).
 
         This website provides the starter, [page sections](/page-sections) and [base components](/base-components). The page sections are bare-bones interpretations of universal information presentation patterns that can be found on almost every corporate website. Sections are composed of base components and are used to build complete pages. The base components can also be used independently to build new components.
+
+        If you have built a new component that you think would be useful for other developers, please [issue a pull request](https://github.com/wernerglinka/metalsmith-nunjucks-components). 
 
       header: "h1"
       subTitle: ""

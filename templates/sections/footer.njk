@@ -2,12 +2,25 @@
 
 <footer>
   <div class="container">
-    <p>Last site build: {{ stats.atime | UTCdate }}</p>
-    <p>Metalsmith version: {{ msVersion }}</p>
-    <p>Node version: {{ nodeVersion }}</p>
-    <p class="copyright">
-      © 2022 - Build with Metalsmith
+    <div>
+      <h2>Metalsmith Components</h2>
+      <p class="copyright">
+        © 2022 - Build with <a href="https://www.metalsmith.io/" target="_blank" rel="noopener noreferrer">Metalsmith</a>
     </p>
+    </div>
+
+    <ul id="social-links">
+      {% for socialLink in social.links %}
+        <li>
+          <div>
+            {% set path = socialLink.url %}
+            {% set iconSource = socialLink.icon %}
+            <a href={{ socialLink.url}} class="{{ path | trimSlashes }}" target="_blank" rel="noopener noreferrer">{{ icon(iconSource) }}</a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+      
   </div>
   <a class="to-top" href="#at-top">{{ icon("arrow-up-circle") }}</a>
 </footer>

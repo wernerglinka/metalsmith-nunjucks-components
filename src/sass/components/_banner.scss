@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 /**
  * Page section Banner
  */
@@ -17,11 +19,9 @@
   .content {
     padding: 50px 0;
 
-    @media (max-width: 767px) {
+    @media (max-width: $tablet-breakpoint) {
       flex-direction: column-reverse;
-      @media (max-width: 767px) {
-        padding: 0;
-      }
+      padding: 0;
     }
 
     > div {

@@ -6,12 +6,12 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 30vw;
+  padding-top: 100px;
   position: relative;
 
-  @media (max-width: 600px ) {
+  @media (max-width: $small-tablet-breakpoint) {
     height: auto;
-    padding-top: 150px;
+    padding-top: 0;
   }
   
   .prose {
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
 
-    @media (max-width: 600px ) {
+    @media (max-width:$small-tablet-breakpoint) {
       flex-direction: column;
       margin-bottom: 100px;
     }
@@ -35,13 +35,13 @@
       font-size: 65px;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width:$small-tablet-breakpoint) {
       font-size: 40px;
       text-align: left;
       margin-left: 40px;
       padding-right: 0;
     }
-    @media (max-width: 400px) {
+    @media (max-width:$mobile-breakpoint) {
       font-size: 32px;
       margin-left: 0;
     }
@@ -54,12 +54,12 @@
     @media (min-width: 1300px) {
       font-size: 39px;
     }
-    @media (max-width: 600px) {
+    @media (max-width:$small-tablet-breakpoint) {
       font-size: 25px;
       margin: 0 0 0 80px;
       max-width: 100%
     }
-    @media (max-width: 400px) {
+    @media (max-width:$mobile-breakpoint) {
       font-size: 20px;
       margin: 0 0 0 30px;
       text-align: right;
@@ -73,8 +73,8 @@
     font-size: 20px;
     @include glass-panel;
 
-    @media (max-width: 400px) {
-      font-size: 18px;
+    @media (max-width:$mobile-breakpoint) {
+      font-size: 16px;
     }
   }
 
@@ -88,7 +88,7 @@
       border: none;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width:$small-tablet-breakpoint) {
       margin-top: 250px;
     }
 
@@ -97,7 +97,7 @@
       fill: transparent;
       transition: stroke .5s ease-in-out;
 
-      @media (max-width: 600px) {
+      @media (max-width:$small-tablet-breakpoint) {
         display: none;
       }
     }

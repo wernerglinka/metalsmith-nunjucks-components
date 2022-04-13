@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 /**
  * Page section Media
  */
@@ -16,7 +18,7 @@
   .content {
     display: flex;
 
-    @media (max-width: 767px) {
+    @media (max-width: $tablet-breakpoint) {
       flex-direction: column-reverse;
     }
 
@@ -47,8 +49,8 @@
     svg {
       width: 100%;
       height: 100%;
-      max-width: 400px;
-      max-height: 400px;
+      max-width: var(--max-width-mobile);
+      max-height: var(--max-width-mobile);
     }
   }
 }

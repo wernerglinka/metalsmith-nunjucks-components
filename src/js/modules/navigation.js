@@ -1,3 +1,5 @@
+/* global window, document, IntersectionObserver */
+
 /**
  * Manage the main site navigation
  * @params {*} none
@@ -39,10 +41,15 @@ const navigation = (function() {
 
     document.addEventListener("swup:contentReplaced", e => {
       // get the path from the swup object and delete leading and trailing "/"
-      let loc = e.path[0].location.pathname.replace(/(^\/)|(\/$)/g, "");
+      loc = e.path[0].location.pathname.replace(/(^\/)|(\/$)/g, "");
       loc = loc || "home";
       document.body.setAttribute("pageName", loc);
     });
+
+    const options = {
+      root: null,
+      rootMargin: "-70px",
+    };
 
     // fadein the header background when page starts scrolling
     const scrollObserver = new IntersectionObserver(entries => {
@@ -51,7 +58,8 @@ const navigation = (function() {
       } else {
         document.body.classList.add("is-scrolling");
       }
-    });
+    }, options);
+
     scrollObserver.observe(header);
   };
 

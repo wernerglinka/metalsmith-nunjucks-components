@@ -7,23 +7,7 @@
         {% set iconSource = "ms-bug" %}
         <a class="js-home-link" href="/">{{ icon(iconSource) }}</a>
       </div>
-
-      {{ socialLinks | dump }}
-
-      <div id="social-links">
-        <ul>
-          {% for socialLink in social.links %}
-            <li>
-              <div>
-                {% set path = socialLink.url %}
-                {% set iconSource = socialLink.icon %}
-                <a href={{ socialLink.url}} class="{{ path | trimSlashes }}" target="_blank" rel="noopener noreferrer">{{ icon(iconSource) }}</a>
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-
+      
       <div id="main-menu" class="js-main-menu">
         <ul>
           {% for menuItem in nav.menu %}
@@ -31,6 +15,17 @@
               <div>
                 {% set path = menuItem.url %}
                 <a href={{ menuItem.url}} class="{{ path | trimSlashes }}">{{ menuItem.label }}</a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+        <ul id="social-links">
+          {% for socialLink in social.links %}
+            <li>
+              <div>
+                {% set path = socialLink.url %}
+                {% set iconSource = socialLink.icon %}
+                <a href={{ socialLink.url}} class="{{ path | trimSlashes }}" target="_blank" rel="noopener noreferrer">{{ icon(iconSource) }}</a>
               </div>
             </li>
           {% endfor %}
