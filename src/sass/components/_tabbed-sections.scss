@@ -39,4 +39,19 @@
     }
   }
 
+  .tab-content-wrapper {
+    position: relative;
+
+    .tab-content {
+      position: static;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: var(--gutter-width);
+      background-color: var(--white);
+      border: var(--demo-border);
+      box-shadow: var(--box-shadow-default);
+    }
+  }
 }

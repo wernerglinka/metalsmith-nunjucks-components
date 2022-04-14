@@ -5,6 +5,7 @@ import loadResponsiveImage from "./modules/load-responsive-image";
 import navigation from "./modules/navigation";
 import modalVideo from "./modules/modal-video";
 import inlineVideo from "./modules/inline-video";
+import tabbed from "./modules/tabbed-sections";
 
 function initPage() {
   // load the youTube video JS api
@@ -30,6 +31,9 @@ function initPage() {
   }
   if (document.querySelector(".js-inline-video")) {
     inlineVideo.init();
+  }
+  if (document.querySelector(".js-tabbed-sections")) {
+    tabbed.init();
   }
 }
 

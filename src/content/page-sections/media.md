@@ -607,11 +607,12 @@ sections:
             subTitle: ""
             prose: |-
 
-              ### Frontmatter for the audio example
+              ### Frontmatter for the lottie animation example
 
               ```yaml
               section: media
-              sectionClass: ""
+              sectionClass: "example"
+              animateSection: true
               inContainer: true
               hasBackground: false
               bgColor: ""
@@ -622,20 +623,20 @@ sections:
               paddingBottom: false
               reverse: false
               text:
-                title: Using Audio
+                title: Using a Lottie Animation
                 header: "h1"
-                subTitle: ... with an optional background image
-                prose: The audio base component uses the responsive image base component to display a background image.
-              hasCtas: false
+                subTitle: ""
+                prose: Animated svg in Lottie format. Lottie is an open source animation file format that’s tiny, high quality, interactive, and can be manipulated at runtime. The top 500 apps on the App store now use Lottie to engage users and enhance conversions.
+              hasCtas: true
               ctas:
-                - url: ""
-                  label: ""
+                - url: "https://lottiefiles.com/lottie"
+                  label: "Read more about Lottie"
                   isExternal: true
                   isButton: true
                   buttonStyle: "primary"
                   isVideoTrigger: false
                   videoId: ""
-              mediaType: Audio
+              mediaType: Lottie
               video:
                 inline: false
                 src: youtube
@@ -649,16 +650,174 @@ sections:
                 aspectRatio: ""
                 caption: ""
               lottieData:
+                src: "/assets/animations/example3.json"
+                control:
+                  autoplay: true
+                  loop: true
+              icon: ""
+              audio:
+                bgImage: ""
+                aspectRatio: ""
+                ogg: ""
+                mpeg: ""
+                caption:
+              ```
+
+              ### frontmatter properties
+
+              The above example code shows how the section is composed of the text, ctas and the various media type options. The media type is selected by the `mediaType` property. 
+
+          hasCtas: false
+          ctas:
+            - url: ""
+              label: ""
+              isExternal: true
+              isButton: true
+              buttonStyle: "primary"
+
+      - video:
+        - section: intro
+          disabled: false
+          inContainer: true
+          marginTop: false
+          marginBottom: false
+          paddingTop: false
+          paddingBottom: false
+          backgroundColor: ""
+          targetId: ""
+          text:
+            title: Media Section with Video
+            header: "h2"
+            subTitle: ""
+            prose: ""
+          hasCtas: false
+          ctas:
+            - url: ""
+              label: ""
+              isExternal: true
+              isButton: true
+              buttonStyle: "primary"
+        
+        - section: media
+          sectionClass: "example"
+          animateSection: true
+          inContainer: true
+          hasBackground: false
+          bgColor: ""
+          bgIsDark: false
+          marginTop: true
+          marginBottom: true
+          paddingTop: false
+          paddingBottom: false
+          reverse: false
+          text:
+            title: Show a video in a modal
+            header: "h1"
+            subTitle: ""
+            prose: The video base component uses the responsive image base component to display a background image. Alternatively, the video may be shown inline.
+          hasCtas: false
+          ctas:
+            - url: ""
+              label: ""
+              isExternal: true
+              isButton: true
+              buttonStyle: "primary"
+              isVideoTrigger: false
+              videoId: ""
+          mediaType: Video
+          video:
+            inline: false
+            src: youtube
+            id: "eu5lv2Umn3M"
+            tn: "v1649365834/metalsmith-components/deepPurple_nvqi3g.jpg"
+            aspectRatio: "56.25"
+            caption:
+          image:
+            src: ""
+            alt: ""
+            aspectRatio: ""
+            caption: ""
+          lottieData:
+            src: ""
+            control:
+              autoplay: true
+              loop: true
+          icon: ""
+          audio:
+            bgImage: ""
+            aspectRatio: ""
+            ogg: ""
+            mpeg: ""
+            caption:
+        
+        - section: intro
+          disabled: false
+          inContainer: true
+          marginTop: false
+          marginBottom: false
+          paddingTop: false
+          paddingBottom: false
+          backgroundColor: ""
+          targetId: ""
+          text:
+            title: ""
+            header: "h2"
+            subTitle: ""
+            prose: |-
+
+              ### Frontmatter for the video example
+
+              ```yaml
+              section: media
+              sectionClass: "example"
+              animateSection: true
+              inContainer: true
+              hasBackground: false
+              bgColor: ""
+              bgIsDark: false
+              marginTop: true
+              marginBottom: true
+              paddingTop: false
+              paddingBottom: false
+              reverse: false
+              text:
+                title: Show a video in a modal
+                header: "h1"
+                subTitle: ""
+                prose: The video base component uses the responsive image base component to display a background image. Alternatively, the video may be shown inline.
+              hasCtas: false
+              ctas:
+                - url: ""
+                  label: ""
+                  isExternal: true
+                  isButton: true
+                  buttonStyle: "primary"
+                  isVideoTrigger: false
+                  videoId: ""
+              mediaType: Video
+              video:
+                inline: false
+                src: youtube
+                id: "eu5lv2Umn3M"
+                tn: "v1649365834/metalsmith-components/deepPurple_nvqi3g.jpg"
+                aspectRatio: "56.25"
+                caption:
+              image:
+                src: ""
+                alt: ""
+                aspectRatio: ""
+                caption: ""
+              lottieData:
                 src: ""
                 control:
                   autoplay: true
                   loop: true
               icon: ""
               audio:
-                bgImage: "v1649450685/metalsmith-components/trees-water_egdhlq.jpg"
-                aspectRatio: "56.25"
-                ogg: "v1649450616/metalsmith-components/assets/sample-ogg-file_zs5gnm.ogg"
-                mpeg: "v1649450603/metalsmith-components/assets/sample-mp3-file_fus77z.mp3"
+                bgImage: ""
+                aspectRatio: ""
+                ogg: ""
+                mpeg: ""
                 caption:
               ```
 

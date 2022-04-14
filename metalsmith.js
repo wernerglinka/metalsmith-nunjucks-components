@@ -126,10 +126,10 @@ Metalsmith(__dirname)
 
   .use(when(isProduction, htmlMinifier()))
 
-  .use(function(files, metalsmith, done) {
-    console.log(metalsmith.metadata());
-    done();
-  })
+  // .use(function(files, metalsmith, done) {
+  //  console.log(metalsmith.metadata());
+  //  done();
+  // })
 
   .build(err => {
     if (err) {

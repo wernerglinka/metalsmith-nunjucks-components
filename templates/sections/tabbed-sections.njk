@@ -3,15 +3,15 @@
 {# this section combines lists of sections and displays them in tabs #}
 
 <section 
-  class="section-tabbed-sections {% if params.sectionClass %}{{ params.sectionClass }}{% endif %} {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+  class="section-tabbed-sections js-tabbed-sections {% if params.sectionClass %}{{ params.sectionClass }}{% endif %} {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
   <div class="content">
     
-    <ul class="tabs">
+    <ul class="tabs js-tabs">
     {# loop through all tabs objects. Use key for tabs label and tab content id #} 
     {% for obj in params.tabs %}
       {% set index = loop.index %}
       {% for key, value in obj %}
-      <li class="tab-item {% if index == 1 %}active{% endif %}">
+      <li class="tab-item js-tab">
         <a href="#{{ key }}-tab" class="tab-link">
           {{ key | capitalize }}
         </a>
@@ -20,7 +20,7 @@
     {% endfor %}
     </ul>
 
-    <div class="tab-content-wrapper">
+    <div class="tab-content-wrapper js-tab-content-wrapper">
     {# loop through all tabs content. Each tab content will be an array of sections #} 
     {% for obj in params.tabs %}
       
@@ -29,7 +29,7 @@
         {% set name = key %}
       {% endfor %}
 
-      <div id="{{ name | lower }}-tab" class="tab-content">
+      <div id="{{ name | lower }}-tab" class="tab-content js-tab-content">
       
       {# value is the array with the sections for this tab #}
       {% for key, value in obj %}
