@@ -1,16 +1,18 @@
-/* global window, document */
+/* global window, document, YT */
 
 // function to play inline youTube videos
 
 const inlineVideos = (function() {
+  // allVideos is initially a placeholder div and will be replaced with the
+  // actual video element when the video is loaded
   const allVideos = document.querySelectorAll(".inline-video");
   const allVideoWrappers = document.querySelectorAll(".inline-video-wrapper");
   const allPlayers = [];
 
-  // initialize all video links when the player is ready
+  // initialize all video trigger links when the player is ready
   const initVideoLinks = function() {
     allVideoWrappers.forEach(function(thisTrigger, i) {
-      // next sibling is the video button next to the video wrapper
+      // find the trigger in the video wrapper
       thisTrigger.nextElementSibling.addEventListener("click", e => {
         // start playing the video
         allPlayers[i].playVideo();
@@ -28,7 +30,7 @@ const inlineVideos = (function() {
     // YT.PlayerState.PAUSED     =  2
     // YT.PlayerState.BUFFERING  =  3
     // YT.PlayerState.CUED       =  5
-    console.log(event.target.h);
+
     switch (event.data) {
       case YT.PlayerState.PAUSED:
         event.target.h.parentElement.parentElement.classList.remove("video-playing");

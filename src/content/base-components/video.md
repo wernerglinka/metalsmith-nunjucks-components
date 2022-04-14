@@ -69,10 +69,10 @@ sections:
       prose: |-
         ```yaml
           video:
-            inline: false
+            inline: true
             src: youtube
-            id: "eu5lv2Umn3M"
-            tn: "v1649365834/metalsmith-components/deepPurple_nvqi3g.jpg"
+            id: "OorZcOzNcgE"
+            tn: "v1649962060/metalsmith-components/deepPurple2_d05gj3.jpg"
             aspectRatio: "56.25"
             caption: ""
         ```
@@ -86,8 +86,8 @@ sections:
     video:
       inline: true
       src: youtube
-      id: "eu5lv2Umn3M"
-      tn: "v1649365834/metalsmith-components/deepPurple_nvqi3g.jpg"
+      id: "OorZcOzNcgE"
+      tn: "v1649962060/metalsmith-components/deepPurple2_d05gj3.jpg"
       aspectRatio: "56.25"
   
   - section: intro

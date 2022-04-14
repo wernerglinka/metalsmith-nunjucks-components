@@ -4,7 +4,7 @@
     {% if videoData.inline %}
     <div class="video inline">
       <div class="inline-video-wrapper">
-        <div class="inline-video" data-videoid="eu5lv2Umn3M" data-starttime="{{videoData.start}}" data-endtime="{{videoData.end}}"></div>
+        <div class="inline-video" data-videoid={{ videoData.id}} data-starttime={{videoData.start}} data-endtime={{videoData.end}}></div>
       </div>
     
       <button class="js-inline-video video-trigger">
