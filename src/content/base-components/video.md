@@ -23,7 +23,7 @@ sections:
       header: "h1"
       subTitle: "A base component that renders a video."
       prose: |-
-        The video is rendered either inline or in a model overlay.
+        The video is rendered in a model overlay.
 
         ```yaml
           video:
@@ -40,10 +40,71 @@ sections:
         - **tn** - A video thumbnail
         - **aspectRation** - the aspect ratio of the image. Used to prevent any content movement when the high-res image in inserted into the DOM.
         - **caption** - used it to give credit or whatever makes sense.
+        
+  - section: base-component-demo
+    disabled: false
+    inContainer: true
+    component: video
+    title: "Renders in a modal overlay"
+    video:
+      inline: false
+      src: youtube
+      id: "eu5lv2Umn3M"
+      tn: "v1649365834/metalsmith-components/deepPurple_nvqi3g.jpg"
+      aspectRatio: "56.25"
 
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: false
+    paddingTop: false
+    paddingBottom: false
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: ""
+      header: "h1"
+      subTitle: ""
+      prose: |-
+        ```yaml
+          video:
+            inline: false
+            src: youtube
+            id: "eu5lv2Umn3M"
+            tn: "v1649365834/metalsmith-components/deepPurple_nvqi3g.jpg"
+            aspectRatio: "56.25"
+            caption: ""
+        ```
         For an usage example see the [media section](/page-sections/media).
         
-        ## Package
+  - section: base-component-demo
+    disabled: false
+    inContainer: true
+    component: video
+    title: "Renders inline"
+    video:
+      inline: true
+      src: youtube
+      id: "eu5lv2Umn3M"
+      tn: "v1649365834/metalsmith-components/deepPurple_nvqi3g.jpg"
+      aspectRatio: "56.25"
+  
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: true
+    paddingTop: false
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: "Package"
+      header: "h3"
+      subTitle: ""
+      prose: |-
+        
         The download package includes the following:
 
         - Template file
@@ -54,9 +115,8 @@ sections:
     hasCtas: true
     ctas:
       - url: "https://github.com"
-        label: "Download Video Component"
+        label: "Download video Component"
         isExternal: true
         isButton: true
         buttonStyle: "primary"
-  
 ---
