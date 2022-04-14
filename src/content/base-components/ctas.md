@@ -23,7 +23,7 @@ sections:
       header: "h1"
       subTitle: "A base component that renders multiple buttons and/or links"
       prose: |-
-        Renders a link as a button or a test link. The link target may be a local - or external page.
+        Renders links as buttons or text links. The link target may be a local - or external page.
 
         ### Usage
         ```yaml
@@ -32,6 +32,11 @@ sections:
               label: Get the Starter
               isExternal: true
               isButton: true
+              buttonStyle: "primary"
+            - url: "https://github.com/wernerglinka/ms-components"
+              label: Get the Starter
+              isExternal: true
+              isButton: false
               buttonStyle: "primary"
         ```
         - **url** - The link target
@@ -42,7 +47,45 @@ sections:
 
         For an usage example see the [media section](/page-sections/media).
 
-        ## Package
+    hasCtas: false
+    ctas:
+      - url: ""
+        label: ""
+        isExternal: true
+        isButton: true
+        buttonStyle: "primary"
+
+  - section: base-component-demo
+    disabled: false
+    inContainer: true
+    component: ctas
+    ctas:
+      - url: "https://github.com/wernerglinka/ms-components"
+        label: Get the Starter
+        isExternal: true
+        isButton: true
+        buttonStyle: "primary"
+      - url: "https://github.com/wernerglinka/ms-components"
+        label: Get the Starter
+        isExternal: true
+        isButton: false
+        buttonStyle: "primary"
+  
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: true
+    paddingTop: false
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: "Package"
+      header: "h3"
+      subTitle: ""
+      prose: |-
+        
         The download package includes the following:
 
         - Template file
@@ -52,7 +95,7 @@ sections:
     hasCtas: true
     ctas:
       - url: "https://github.com"
-        label: "Download Text Component"
+        label: "Download CTAs Component"
         isExternal: true
         isButton: true
         buttonStyle: "primary"

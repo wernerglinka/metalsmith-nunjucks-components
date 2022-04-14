@@ -1,0 +1,51 @@
+@use '../base/variables' as *;
+
+.section-base-component-demo {
+  max-width: $small-tablet-breakpoint;
+  margin: 50px 0;
+  
+  .demo-wrapper {
+    padding: var(--gutter-width);
+    background-color: var(--white);
+    border: var(--demo-border);
+    box-shadow: var(--box-shadow-default);
+  }
+
+  .audio-demo {
+    display: flex;
+    justify-content: center;
+
+    .audio {
+      position: static;
+      
+      audio {
+        position: static;
+        margin: 0;
+      }
+    }
+  }
+
+  .ctas-demo {
+    .ctas {
+      padding-top: 0;
+    }
+  }
+
+  .icon-demo {
+    .icon-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    svg {
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .lottie-demo {
+    display: flex;
+    justify-content: center;
+  }
+  
+}

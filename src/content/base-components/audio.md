@@ -35,7 +35,40 @@ sections:
 
         For an usage example see the [media section](/page-sections/media).
 
-        ## Package
+    hasCtas: false
+    ctas:
+      - url: ""
+        label: ""
+        isExternal: true
+        isButton: true
+        buttonStyle: "primary"
+  
+  - section: base-component-demo
+    disabled: false
+    inContainer: true
+    component: audio
+    audio:
+      bgImage: ""
+      aspectRatio: ""
+      ogg: "v1649450616/metalsmith-components/assets/sample-ogg-file_zs5gnm.ogg"
+      mpeg: "v1649450603/metalsmith-components/assets/sample-mp3-file_fus77z.mp3"
+      caption:
+  
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: true
+    paddingTop: false
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: "Package"
+      header: "h3"
+      subTitle: ""
+      prose: |-
+        
         The download package includes the following:
 
         - Template file
@@ -45,9 +78,8 @@ sections:
     hasCtas: true
     ctas:
       - url: "https://github.com"
-        label: "Download Audio Component"
+        label: "Download Text Component"
         isExternal: true
         isButton: true
         buttonStyle: "primary"
-  
 ---

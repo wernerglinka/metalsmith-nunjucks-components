@@ -31,7 +31,7 @@ sections:
 
         ```yaml
           image:
-            src: "v1639779216/gatsby4mdx/cloudinary-logo_njlkd9.jpg"
+            src: "v1649349741/metalsmith-components/corporate_jwbmek.jpg"
             alt: "cloudinary"
             aspectRatio: "56.25"
             caption: "Optional image caption"
@@ -43,7 +43,39 @@ sections:
 
         For an usage example see the [media section](/page-sections/media).
 
-        ## Package
+    hasCtas: false
+    ctas:
+      - url: ""
+        label: ""
+        isExternal: true
+        isButton: true
+        buttonStyle: "primary"
+  
+  - section: base-component-demo
+    disabled: false
+    inContainer: true
+    component: image
+    image:
+      src: "v1649349741/metalsmith-components/corporate_jwbmek.jpg"
+      alt: "cloudinary"
+      aspectRatio: "56.25"
+      caption: "Optional image caption"
+  
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: true
+    paddingTop: false
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: "Package"
+      header: "h3"
+      subTitle: ""
+      prose: |-
+        
         The download package includes the following:
 
         - Template file
@@ -54,9 +86,8 @@ sections:
     hasCtas: true
     ctas:
       - url: "https://github.com"
-        label: "Download Video Component"
+        label: "Download Text Component"
         isExternal: true
         isButton: true
         buttonStyle: "primary"
-  
 ---
