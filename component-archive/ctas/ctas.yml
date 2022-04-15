@@ -1,0 +1,6 @@
+ctas:
+  - url: ""
+    label: ""
+    isExternal: true
+    isButton: true
+    buttonStyle: "primary"

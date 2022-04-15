@@ -1,0 +1,34 @@
+{% from "./responsive-image.njk" import responsiveImage %}
+
+{% macro video(videoData, siteMeta) %}
+    {% if videoData.inline %}
+    <div class="video inline">
+      <div class="inline-video-wrapper">
+        <div class="inline-video" data-videoid={{ videoData.id}} data-starttime={{videoData.start}} data-endtime={{videoData.end}}></div>
+      </div>
+    
+      <button class="js-inline-video video-trigger">
+        <div class="play-button"></div>
+        {% set image = {
+          src: videoData.tn,
+          alt: "",
+          aspectRatio: videoData.aspectRatio
+        } %}
+        {{ responsiveImage(image, siteMeta) }}
+      </button>
+    </div>
+    {% else %}
+    <div class="video" >
+      <button class="js-modal-video" data-videoid={{ videoData.id}} data-videosrc={{ videoData.src }}>
+        <div class="play-button"></div>
+        {% set image = {
+          src: videoData.tn,
+          alt: "",
+          aspectRatio: videoData.aspectRatio
+        } %}
+        {{ responsiveImage(image, siteMeta) }}
+      </button>
+    </div>
+  {% endif %}
+  
+{% endmacro %}

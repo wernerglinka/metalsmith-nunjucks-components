@@ -10,7 +10,7 @@
       {% set name = section.section %}
       {% set params = section %}
       
-      <div class="section-wrapper{% if section.inContainer %} inContainer{% endif %}{% if section.marginTop %} marginTop{% endif %}{% if section.marginBottom %} marginBottom{% endif %} ">
+      <div class="section-wrapper{% if section.inContainer %} inContainer{% endif %}{% if section.marginTop %} marginTop{% endif %}{% if section.marginBottom %} marginBottom{% endif %}{% if section.bgIsDark %} backgroundDark{% endif %} ">
         {# site and components are metadata #}
         {{ component(name, params, site, components, pageSections) }}
       </div>
