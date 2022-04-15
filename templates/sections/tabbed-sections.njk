@@ -3,7 +3,7 @@
 {# this section combines lists of sections and displays them in tabs #}
 
 <section 
-  class="section-tabbed-sections js-tabbed-sections {% if params.sectionClass %}{{ params.sectionClass }}{% endif %} {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+  class="section-tabbed-sections js-tabbed-sections {{ params.sectionClass }} {{ " paddingTop" if params.paddingTop }} {{ " paddingBottom" if params.paddingBottom }}">
   <div class="content">
     
     <ul class="tabs js-tabs">

@@ -1,6 +1,6 @@
 {% from "../partials/responsive-image.njk" import responsiveImage %}
 
-<section class="section-image {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+<section class="section-image {{ " paddingTop" if params.paddingTop }} {{ " paddingBottom" if params.paddingBottom }}">
   <div class="container">
     <div 
       class="outer-image-wrapper {{ params.image.alignment }} {% if params.image.hasBorder %}has-border{%endif%}" 

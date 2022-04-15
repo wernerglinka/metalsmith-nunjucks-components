@@ -1,7 +1,7 @@
 {% from "../partials/text.njk" import text %}
 {% from "../partials/ctas.njk" import ctas %}
 
-<section class="section-intro {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+<section class="section-intro {{ " paddingTop" if params.paddingTop }} {{ " paddingBottom" if params.paddingBottom }}">
   <div class="content">
     {{ text(params.text) }}
 

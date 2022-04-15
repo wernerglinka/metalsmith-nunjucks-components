@@ -5,7 +5,7 @@
 
 {# this section receives props params and site #}
 
-<section class="section-banner {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+<section class="section-banner {{ " paddingTop" if params.paddingTop }} {{ " paddingBottom" if params.paddingBottom }}">
   <div class="content columns">
     <div class="prose">
       {{ text(params.text)}}

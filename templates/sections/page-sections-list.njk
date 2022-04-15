@@ -1,6 +1,6 @@
 {% from "../partials/icon.njk" import icon %}
 
-<section class="section-page-sections-list {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+<section class="section-page-sections-list {{ " paddingTop" if params.paddingTop }} {{ " paddingBottom" if params.paddingBottom }}">
   <div class="container">
     <ul class="cards-list">
       {% for item in pageSections %}

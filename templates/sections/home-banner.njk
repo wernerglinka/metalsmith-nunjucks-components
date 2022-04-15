@@ -3,7 +3,7 @@
 
 {# this section receives props params and site #}
 
-<section class="section-home-banner {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+<section class="section-home-banner {{ " paddingTop" if params.paddingTop }} {{ " paddingBottom" if params.paddingBottom }}">
   <div class="content">
 
     <div class="prose">
