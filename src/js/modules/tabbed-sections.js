@@ -1,4 +1,5 @@
 /* global window, document, IntersectionObserver */
+import debounce from "../utilities/debounce";
 
 /**
  * Manage the tabbed sections display
@@ -6,11 +7,7 @@
  * @return {function} initializes the tabbed sections display
  */
 const tabbed = (function() {
-  const init = () => {
-    const allTabs = document.querySelector(".js-tabs");
-    const tabPanes = document.querySelectorAll(".js-tab-content");
-    const TabPanesWrapper = document.querySelector(".js-tab-content-wrapper");
-
+  const getPanesWrapperHeight = (tabPanes, allTabs) => {
     // measure all tab panes height and attach height to element
     let tabPanesWrapperHeight = 0;
     tabPanes.forEach(tabPane => {
@@ -23,12 +20,30 @@ const tabbed = (function() {
       tabPanesWrapperHeight = tabPanesWrapperHeight < tabPaneHeight ? tabPaneHeight : tabPanesWrapperHeight;
     });
 
-    // set the height for the tab panes wrapper
-    TabPanesWrapper.style.height = `${tabPanesWrapperHeight}px`;
+    // get active tab target
+    const activeTab = allTabs
+      .querySelector(".active")
+      .querySelector("a")
+      .getAttribute("href");
+    // get the active tab pane
+    const activeTabPane = document.querySelector(activeTab);
+    // make active tab pane visible
+    activeTabPane.style.opacity = "1";
+
+    return tabPanesWrapperHeight;
+  };
+
+  const init = () => {
+    const allTabs = document.querySelector(".js-tabs");
+    const tabPanes = document.querySelectorAll(".js-tab-content");
+    const TabPanesWrapper = document.querySelector(".js-tab-content-wrapper");
 
     // make first tab/tab-pane active
     const firstTab = allTabs.querySelector(".js-tab");
     firstTab.classList.add("active");
+
+    // set the height for the tab panes wrapper
+    TabPanesWrapper.style.height = getPanesWrapperHeight(tabPanes, allTabs);
 
     // get href attribute from first tab
     const firstTabHref = firstTab.querySelector("a").getAttribute("href");
@@ -72,27 +87,13 @@ const tabbed = (function() {
     });
 
     // add resize event listener to the window to update the tab panes height
-    window.addEventListener("resize", () => {
-      console.log("resizing");
-      // hide all tab panes
-      TabPanesWrapper.style.opacity = "0";
-      // measure all tab panes height and attach height to element
-      tabPanesWrapperHeight = 0;
-      tabPanes.forEach(tabPane => {
-        tabPane.style.position = "static";
-        const tabPaneHeight = tabPane.getBoundingClientRect().height;
-        tabPane.style.height = `${tabPaneHeight}px`;
-        tabPane.style.position = "absolute";
-
-        // get the highest tab pane height
-        tabPanesWrapperHeight = tabPanesWrapperHeight < tabPaneHeight ? tabPaneHeight : tabPanesWrapperHeight;
-      });
-
-      // set the height for the tab panes wrapper
-      TabPanesWrapper.style.height = `${tabPanesWrapperHeight}px`;
-      // and make it visible again
-      TabPanesWrapper.style.opacity = "1";
-    });
+    window.addEventListener(
+      "resize",
+      debounce(() => {
+        TabPanesWrapper.style.height = getPanesWrapperHeight(tabPanes, allTabs);
+      }),
+      500
+    );
   };
 
   return { init };

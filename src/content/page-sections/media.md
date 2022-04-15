@@ -242,13 +242,13 @@ sections:
             title: Using an Icon instead
             header: "h1"
             subTitle: ""
-            prose: Icons are stored in the `templates/icons` directory as Nunjucks files.
-          hasCtas: false
+            prose: Icons are stored in the `templates/icons` directory as Nunjucks files. The feather icon that is used here is from Feather Icons.
+          hasCtas: true
           ctas:
-            - url: ""
-              label: ""
+            - url: "https://feathericons.com/"
+              label: "Checkout Feather Icons"
               isExternal: true
-              isButton: true
+              isButton: false
               buttonStyle: "primary"
               isVideoTrigger: false
               videoId: ""

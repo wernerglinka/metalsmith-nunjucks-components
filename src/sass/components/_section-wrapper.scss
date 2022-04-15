@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .section-wrapper {
   &.inContainer {
     max-width: 1200px;
@@ -11,12 +13,13 @@
       margin-bottom: 60px;
     };
 
-    @media (max-width: 1280px) {
+    // add 80px to compensate for the padding to prevent layout jitter
+    @media (max-width: $desktop-large-breakpoint + 80px) {
       max-width: 100%;
       padding: 0 40px;
     }
-    @media (max-width: 500px) {
-      padding: 0 20px;
+    @media (max-width: $small-tablet-breakpoint) {
+      padding: 0 var(--gutter-width);
     }
   }
 }

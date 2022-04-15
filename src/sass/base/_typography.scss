@@ -52,8 +52,8 @@ h2 {
   @media (max-width: $desktop-breakpoint)  {
     font-size: 1.7rem;
   }
-  @media (max-width: 500px) {
-    font-size: 1.5rem;
+  @media (max-width: $small-tablet-breakpoint) {
+    font-size: 1.3rem;
   }
 }
 

@@ -58,11 +58,11 @@ ol {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: $desktop-large-breakpoint;
   margin: 0 auto;
 
   &.blog-page {
-    max-width: 1024px;
+    max-width: $desktop-breakpoint;
     padding-bottom: 50px;
 
     @media (max-width: 1104px) {

@@ -1,3 +1,5 @@
+@use '../base/variables' as *;
+
 .section-tabbed-sections {
   padding-top: 0;
   padding-bottom: 0;
@@ -14,15 +16,16 @@
     list-style: none;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 50px;
+    margin: 0 0 50px;
     
 
     a {
       display: block;
       padding: 0.5rem 1rem;
       border: 1px solid var(--link-color);
-      margin-right: 20px;
+      margin: 0 20px 20px 0;
       transition: all 0.5s ease-in-out;
 
       &:hover {
@@ -36,6 +39,9 @@
       background-color: var(--link-color);
       color: var(--white);
       text-decoration: none;
+      pointer-events: none;
+      cursor: default;
+      opacity: 0.5;
     }
   }
 
@@ -52,6 +58,10 @@
       background-color: var(--white);
       border: var(--demo-border);
       box-shadow: var(--box-shadow-default);
+
+      @media (max-width: $small-tablet-breakpoint) {
+        padding: var(--gutter-width) 0;
+      }
     }
   }
 }

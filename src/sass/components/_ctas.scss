@@ -95,7 +95,12 @@
     transition: all 0.3s ease-in-out;
   }
 
-  &:hover:after {
-    letter-spacing: 1em;
+  &:hover {
+    text-decoration: none;
+
+    &:after {
+      letter-spacing: 0.5em;
+      text-decoration: none;
+    }
   }
 }
