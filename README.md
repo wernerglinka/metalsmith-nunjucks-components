@@ -7,6 +7,6 @@
   Metalsmith Nunjucks Components
 </h1>
 
-Metalsmith Components is a library for component-based website development. It includes base components and page sections for flexible page layouts. Leave long-text pages behind and implement flexible content models. This project is ongoing and the library is [online and ready to use]().
+Metalsmith Components is a library for component-based website development. It includes base components and page sections for flexible page layouts. Leave long-text pages behind and implement flexible content models. This project is still under development but the library is [online and ready to use](https://metalsmith-components.netlify.app/). Feedback is greatly appreciated.
 
 ## Join the Metalsmith community at [Gitter](https://gitter.im/metalsmith/community).
