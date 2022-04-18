@@ -36,6 +36,8 @@ sections:
 
         If you have built a new component that you think would be useful for other developers, please [issue a pull request](https://github.com/wernerglinka/metalsmith-nunjucks-components). 
 
+        [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/wernerglinka/metalsmith-company-starter)
+
       header: "h1"
       subTitle: ""
     hasCtas: true
