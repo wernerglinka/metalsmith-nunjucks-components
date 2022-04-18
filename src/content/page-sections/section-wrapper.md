@@ -25,7 +25,7 @@ sections:
       prose: |-
         All page sections are enclosed in a section wrapper. The wrapper is used to render a section either inside a container or full-width. The wrapper is also used to add margins and apply a background color.
 
-        These are the properties that are common to all sections, providing the wrapper context.
+        These are the properties that are common to all sections:
 
         ```yaml
         sectionClass: ""

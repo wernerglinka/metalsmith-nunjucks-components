@@ -23,7 +23,7 @@ sections:
       prose: |-
         Have a look at the page Sections. If you like to have a page section added please chat with us on [Gitter](https://gitter.im/metalsmith/community). If you like to contribute a component, issue a [pull request]().
 
-        All sections are wrapper in a section wrapper. Please review the [section wrapper](/page-sections/section-wrapper) page.
+        All sections are enclosed in a section wrapper. Please review the [section wrapper](/page-sections/section-wrapper) page.
       header: "h1"
       subTitle: ""
     hasCtas: false
