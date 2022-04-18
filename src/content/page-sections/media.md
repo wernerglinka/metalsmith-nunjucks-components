@@ -75,7 +75,7 @@ sections:
           inContainer: true
           hasBackground: false
           bgColor: ""
-          bgIsDark: false
+          backgroundIsDark: false
           marginTop: true
           marginBottom: true
           paddingTop: false
@@ -142,7 +142,7 @@ sections:
               inContainer: true
               hasBackground: false
               bgColor: ""
-              bgIsDark: false
+              backgroundIsDark: false
               marginTop: true
               marginBottom: true
               paddingTop: false
@@ -228,7 +228,7 @@ sections:
           inContainer: true
           hasBackground: false
           bgColor: ""
-          bgIsDark: false
+          backgroundIsDark: false
           marginTop: true
           marginBottom: true
           paddingTop: false
@@ -295,7 +295,7 @@ sections:
               inContainer: true
               hasBackground: false
               bgColor: ""
-              bgIsDark: false
+              backgroundIsDark: false
               marginTop: true
               marginBottom: true
               paddingTop: false
@@ -381,7 +381,7 @@ sections:
           inContainer: true
           hasBackground: false
           bgColor: ""
-          bgIsDark: false
+          backgroundIsDark: false
           marginTop: true
           marginBottom: true
           paddingTop: false
@@ -448,7 +448,7 @@ sections:
               inContainer: true
               hasBackground: false
               bgColor: ""
-              bgIsDark: false
+              backgroundIsDark: false
               marginTop: true
               marginBottom: true
               paddingTop: false
@@ -534,7 +534,7 @@ sections:
           inContainer: true
           hasBackground: false
           bgColor: ""
-          bgIsDark: false
+          backgroundIsDark: false
           marginTop: true
           marginBottom: true
           paddingTop: false
@@ -602,7 +602,7 @@ sections:
               inContainer: true
               hasBackground: false
               bgColor: ""
-              bgIsDark: false
+              backgroundIsDark: false
               marginTop: true
               marginBottom: true
               paddingTop: false
@@ -688,7 +688,7 @@ sections:
           inContainer: true
           hasBackground: false
           bgColor: ""
-          bgIsDark: false
+          backgroundIsDark: false
           marginTop: true
           marginBottom: true
           paddingTop: false
@@ -756,7 +756,7 @@ sections:
               inContainer: true
               hasBackground: false
               bgColor: ""
-              bgIsDark: false
+              backgroundIsDark: false
               marginTop: true
               marginBottom: true
               paddingTop: false

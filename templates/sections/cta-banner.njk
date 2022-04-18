@@ -1,0 +1,12 @@
+{% from "../partials/text.njk" import text %}
+{% from "../partials/ctas.njk" import ctas %}
+
+<section class="section-cta-banner {{ params.sectionClass }}{{ " paddingTop" if params.paddingTop }} {{ " paddingBottom" if params.paddingBottom }}">
+  <div class="content">
+    {{ text(params.text) }}
+
+    {% if params.hasCtas %}
+      {{ ctas(params.ctas) }}
+    {% endif %}
+  </div>
+</section>

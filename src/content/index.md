@@ -136,8 +136,8 @@ sections:
     animateSection: true
     inContainer: true
     hasBackground: false
-    bgColor: ""
-    bgIsDark: false
+    backgroundColor: ""
+    backgroundIsDark: false
     marginTop: true
     marginBottom: true
     paddingTop: false
@@ -195,6 +195,30 @@ sections:
       header: "h2"
       prose: |-
         This website code is available at [GitHub](https://github.com/wernerglinka/metalsmith-nunjucks-components). 
+
+    hasCtas: false
+    ctas:
+      - url: ""
+        label: ""
+        isExternal: false
+        isButton: true
+        buttonStyle: "secondary"
+
+  - section: cta-banner
+    disabled: false
+    inContainer: false
+    marginTop: false
+    marginBottom: false
+    paddingTop: true
+    paddingBottom: false
+    hasBackground: true
+    backgroundColor: "#fca311"
+    backgroundIsDark: false
+    targetId: ""
+    text:
+      title: Leave long-text pages behind and build better Websites.
+      header: "h3"
+      subTitle: Using "sectioned" pages to build flexible page layouts
 
     hasCtas: true
     ctas:
