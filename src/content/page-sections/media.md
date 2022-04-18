@@ -93,8 +93,6 @@ sections:
               isExternal: true
               isButton: true
               buttonStyle: "primary"
-              isVideoTrigger: false
-              videoId: ""
           mediaType: Image
           video:
             inline: false
@@ -162,8 +160,6 @@ sections:
                   isExternal: true
                   isButton: true
                   buttonStyle: "primary"
-                  isVideoTrigger: false
-                  videoId: ""
               mediaType: Image
               video:
                 inline: false
@@ -250,8 +246,6 @@ sections:
               isExternal: true
               isButton: false
               buttonStyle: "primary"
-              isVideoTrigger: false
-              videoId: ""
           mediaType: Icon
           video:
             inline: false
@@ -319,8 +313,6 @@ sections:
                   isExternal: true
                   isButton: true
                   buttonStyle: "primary"
-                  isVideoTrigger: false
-                  videoId: ""
               mediaType: Icon
               video:
                 inline: false
@@ -407,8 +399,6 @@ sections:
               isExternal: true
               isButton: true
               buttonStyle: "primary"
-              isVideoTrigger: false
-              videoId: ""
           mediaType: Audio
           video:
             inline: false
@@ -476,8 +466,6 @@ sections:
                   isExternal: true
                   isButton: true
                   buttonStyle: "primary"
-                  isVideoTrigger: false
-                  videoId: ""
               mediaType: Audio
               video:
                 inline: false
@@ -564,8 +552,6 @@ sections:
               isExternal: true
               isButton: true
               buttonStyle: "primary"
-              isVideoTrigger: false
-              videoId: ""
           mediaType: Lottie
           video:
             inline: false
@@ -634,8 +620,6 @@ sections:
                   isExternal: true
                   isButton: true
                   buttonStyle: "primary"
-                  isVideoTrigger: false
-                  videoId: ""
               mediaType: Lottie
               video:
                 inline: false
@@ -722,8 +706,6 @@ sections:
               isExternal: true
               isButton: true
               buttonStyle: "primary"
-              isVideoTrigger: false
-              videoId: ""
           mediaType: Video
           video:
             inline: false
@@ -792,8 +774,6 @@ sections:
                   isExternal: true
                   isButton: true
                   buttonStyle: "primary"
-                  isVideoTrigger: false
-                  videoId: ""
               mediaType: Video
               video:
                 inline: false

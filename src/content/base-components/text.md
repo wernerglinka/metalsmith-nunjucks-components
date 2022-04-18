@@ -55,5 +55,26 @@ sections:
       subTitle: "A base component that renders a title, sub title and a body of markdown"
       prose: |-
         The title tag can be set with the header property. The prose or body text is written in marked markdown.
-   
+  
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: true
+    paddingTop: false
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: Base Components Library
+      header: "h3"
+      subTitle: "Library of all code snippets for the base components" 
+      prose: ""
+    hasCtas: true
+    ctas:
+      - url: "/assets/downloads/base-components=archive.zip"
+        label: "Download the Library"
+        isExternal: false
+        isButton: true
+        buttonStyle: "primary"
 ---

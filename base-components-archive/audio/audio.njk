@@ -1,26 +1,6 @@
 {% from "./responsive-image.njk" import responsiveImage %}
 
 {% macro audio(audioData, siteMeta) %}
-
-  <style>
-    .audio {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .audio audio {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      margin-left: -150px;
-      margin-top: -27px;
-    }
-  </style>
-
   <div class="audio">
 
     {% if audioData.bgImage %}
@@ -37,6 +17,7 @@
       <source src={{siteMeta.audioPrefix}}{{audioData.mpeg}} type="audio/mpeg"/>
       Your browser does not support the audio element.
     </audio>
+  
   </div>
 
 {% endmacro %}

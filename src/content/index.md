@@ -99,8 +99,6 @@ sections:
             isExternal: true
             isButton: true
             buttonStyle: "primary"
-            isVideoTrigger: false
-            videoId: ""
         image:
           src: "v1647546742/tgc2022/corporate_ip4qbt.jpg"
           alt: "Metalsmith Javascript"
@@ -157,8 +155,6 @@ sections:
         isExternal: true
         isButton: true
         buttonStyle: "primary"
-        isVideoTrigger: false
-        videoId: ""
     mediaType: Image
     video:
       inline: false
@@ -207,6 +203,4 @@ sections:
         isExternal: false
         isButton: true
         buttonStyle: "secondary"
-        isVideoTrigger: false
-        videoId: ""
 ---

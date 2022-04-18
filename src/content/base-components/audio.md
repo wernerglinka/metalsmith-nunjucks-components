@@ -28,6 +28,8 @@ sections:
         ### Usage
         
         ```yaml
+          bgImage: ""
+          aspectRatio: ""
           audio:
             ogg: "v1639165770/gatsby4mdx/audio/sample-ogg-file_fmjjrl.ogg"
             mpeg: "v1639165774/gatsby4mdx/audio/sample-mp3-file_hwsxlc.mp3"
@@ -53,5 +55,27 @@ sections:
       ogg: "v1649450616/metalsmith-components/assets/sample-ogg-file_zs5gnm.ogg"
       mpeg: "v1649450603/metalsmith-components/assets/sample-mp3-file_fus77z.mp3"
       caption:
+
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: false
+    paddingTop: false
+    paddingBottom: false
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: Base Components Library
+      header: "h3"
+      subTitle: "Library of all code snippets for the base components" 
+      prose: ""
+    hasCtas: true
+    ctas:
+      - url: "/assets/downloads/base-components=archive.zip"
+        label: "Download the Library"
+        isExternal: false
+        isButton: true
+        buttonStyle: "primary"
   
 ---

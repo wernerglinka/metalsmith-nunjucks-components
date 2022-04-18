@@ -90,4 +90,25 @@ sections:
       tn: "v1649962060/metalsmith-components/deepPurple2_d05gj3.jpg"
       aspectRatio: "56.25"
 
+  - section: intro
+    disabled: false
+    inContainer: true
+    marginTop: true
+    marginBottom: true
+    paddingTop: false
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    text:
+      title: Base Components Library
+      header: "h3"
+      subTitle: "Library of all code snippets for the base components" 
+      prose: ""
+    hasCtas: true
+    ctas:
+      - url: "/assets/downloads/base-components=archive.zip"
+        label: "Download the Library"
+        isExternal: false
+        isButton: true
+        buttonStyle: "primary"
 ---
