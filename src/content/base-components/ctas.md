@@ -71,33 +71,4 @@ sections:
         isButton: false
         buttonStyle: "primary"
   
-  - section: intro
-    disabled: false
-    inContainer: true
-    marginTop: false
-    marginBottom: true
-    paddingTop: false
-    paddingBottom: true
-    backgroundColor: ""
-    targetId: ""
-    text:
-      title: "Package"
-      header: "h3"
-      subTitle: ""
-      prose: |-
-        
-        The download package includes the following:
-
-        - Template file
-        - SCSS file
-        - YAML object
-
-    hasCtas: true
-    ctas:
-      - url: "https://github.com"
-        label: "Download CTAs Component"
-        isExternal: true
-        isButton: true
-        buttonStyle: "primary"
-  
 ---

@@ -1,4 +1,6 @@
-import debounce from "../utilities/debounce";
+/* global window, document, IntersectionObserver, ResizeObserver  */
+
+import debounce from "./debounce";
 
 const loadResponsiveImage = (function loadResponsiveImage() {
   // images are loaded when they are visible in the viewport and updated when

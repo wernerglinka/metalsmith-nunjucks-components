@@ -3,11 +3,11 @@
 {% macro video(videoData, siteMeta) %}
     {% if videoData.inline %}
     <div class="video inline">
-      <div class="inline-video-wrapper">
-        <div class="inline-video" data-videoid={{ videoData.id}} data-starttime={{videoData.start}} data-endtime={{videoData.end}}></div>
+      <div class="inline-video-wrapper js-inline-video-wrapper">
+        <div class="js-inline-video" data-videoid={{ videoData.id}} data-starttime={{videoData.start}} data-endtime={{videoData.end}}></div>
       </div>
     
-      <button class="js-inline-video video-trigger">
+      <button class="video-trigger">
         <div class="play-button"></div>
         {% set image = {
           src: videoData.tn,

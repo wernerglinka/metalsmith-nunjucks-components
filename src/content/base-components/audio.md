@@ -54,32 +54,4 @@ sections:
       mpeg: "v1649450603/metalsmith-components/assets/sample-mp3-file_fus77z.mp3"
       caption:
   
-  - section: intro
-    disabled: false
-    inContainer: true
-    marginTop: false
-    marginBottom: true
-    paddingTop: false
-    paddingBottom: true
-    backgroundColor: ""
-    targetId: ""
-    text:
-      title: "Package"
-      header: "h3"
-      subTitle: ""
-      prose: |-
-        
-        The download package includes the following:
-
-        - Template file
-        - SCSS file
-        - YAML object
-
-    hasCtas: true
-    ctas:
-      - url: "https://github.com"
-        label: "Download Text Component"
-        isExternal: true
-        isButton: true
-        buttonStyle: "primary"
 ---

@@ -89,34 +89,5 @@ sections:
       id: "OorZcOzNcgE"
       tn: "v1649962060/metalsmith-components/deepPurple2_d05gj3.jpg"
       aspectRatio: "56.25"
-  
-  - section: intro
-    disabled: false
-    inContainer: true
-    marginTop: false
-    marginBottom: true
-    paddingTop: false
-    paddingBottom: true
-    backgroundColor: ""
-    targetId: ""
-    text:
-      title: "Package"
-      header: "h3"
-      subTitle: ""
-      prose: |-
-        
-        The download package includes the following:
 
-        - Template file
-        - SCSS file
-        - YAML object
-        - Javascript file
-
-    hasCtas: true
-    ctas:
-      - url: "https://github.com"
-        label: "Download video Component"
-        isExternal: true
-        isButton: true
-        buttonStyle: "primary"
 ---

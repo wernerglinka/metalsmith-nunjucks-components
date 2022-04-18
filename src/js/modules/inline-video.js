@@ -5,8 +5,8 @@
 const inlineVideos = (function() {
   // allVideos is initially a placeholder div and will be replaced with the
   // actual video element when the video is loaded
-  const allVideos = document.querySelectorAll(".inline-video");
-  const allVideoWrappers = document.querySelectorAll(".inline-video-wrapper");
+  const allVideos = document.querySelectorAll(".js-inline-video");
+  const allVideoWrappers = document.querySelectorAll(".js-inline-video-wrapper");
   const allPlayers = [];
 
   // initialize all video trigger links when the player is ready

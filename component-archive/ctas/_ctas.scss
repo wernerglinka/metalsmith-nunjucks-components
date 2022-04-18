@@ -1,55 +1,9 @@
-.video-button {
-  display: inline-block;
-  padding: 12px 30px;
-  margin-right: 30px;
-  font-size: 14px;
-  color: var(--button-color-primary);
-  border-width: 2px;
-  border-style: solid;
-  transition: background-color 0.3s ease-in-out;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  border-color: var(--button-color-primary);
-  background-color: transparent;
-  cursor: pointer;
-
-  &:hover {
-    color: var(--white);
-    background-color: var(--button-color-primary);
-    text-decoration: none;
-  }
-}
-
-.video-link {
-  display: inline-block;
-  padding: 12px 0;
-  margin-right: 30px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: all 0.3s ease-in-out;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  cursor: pointer;
-
-  &:after {
-    content: "...";
-    padding-left: 10px;
-    letter-spacing: 0.1em;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:hover:after {
-    letter-spacing: 1em;
-  }
-}
-
 .cta-button {
   display: inline-block;
   padding: 12px 30px;
   margin-right: 30px;
   font-size: 14px;
-  color: var(--button-color-primary);
+  color: black;
   border-width: 2px;
   border-style: solid;
   transition: background-color 0.3s ease-in-out;
@@ -57,11 +11,11 @@
   letter-spacing: 0.1em;
   text-decoration: none;
   background-color: transparent;
-  border-color: var(--button-color-primary);
+  border-color: black;
 
   &:hover {
-    color: var(--white);
-    background-color: var(--button-color-primary);
+    color: white;
+    background-color: black;
     text-decoration: none;
   }
 }

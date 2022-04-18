@@ -60,33 +60,4 @@ sections:
         autoplay: true
         loop: true
   
-  - section: intro
-    disabled: false
-    inContainer: true
-    marginTop: false
-    marginBottom: true
-    paddingTop: false
-    paddingBottom: true
-    backgroundColor: ""
-    targetId: ""
-    text:
-      title: "Package"
-      header: "h3"
-      subTitle: ""
-      prose: |-
-        
-        The download package includes the following:
-
-        - Template file
-        - SCSS file
-        - YAML object
-        - Javascript file
-
-    hasCtas: true
-    ctas:
-      - url: "https://github.com"
-        label: "Download Lottie Component"
-        isExternal: true
-        isButton: true
-        buttonStyle: "primary"
 ---

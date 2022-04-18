@@ -61,33 +61,4 @@ sections:
       aspectRatio: "56.25"
       caption: "Optional image caption"
   
-  - section: intro
-    disabled: false
-    inContainer: true
-    marginTop: false
-    marginBottom: true
-    paddingTop: false
-    paddingBottom: true
-    backgroundColor: ""
-    targetId: ""
-    text:
-      title: "Package"
-      header: "h3"
-      subTitle: ""
-      prose: |-
-        
-        The download package includes the following:
-
-        - Template file
-        - SCSS file
-        - YAML object
-        - Javascript file
-
-    hasCtas: true
-    ctas:
-      - url: "https://github.com"
-        label: "Download Text Component"
-        isExternal: true
-        isButton: true
-        buttonStyle: "primary"
 ---

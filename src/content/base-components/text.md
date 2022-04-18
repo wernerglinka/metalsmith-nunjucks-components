@@ -55,34 +55,5 @@ sections:
       subTitle: "A base component that renders a title, sub title and a body of markdown"
       prose: |-
         The title tag can be set with the header property. The prose or body text is written in marked markdown.
-  
-  - section: intro
-    disabled: false
-    inContainer: true
-    marginTop: false
-    marginBottom: true
-    paddingTop: false
-    paddingBottom: true
-    backgroundColor: ""
-    targetId: ""
-    text:
-      title: "Package"
-      header: "h3"
-      subTitle: ""
-      prose: |-
-        
-        The download package includes the following:
-
-        - Template file
-        - SCSS file
-        - YAML object
-
-    hasCtas: true
-    ctas:
-      - url: "https://github.com"
-        label: "Download Text Component"
-        isExternal: true
-        isButton: true
-        buttonStyle: "primary"
-  
+   
 ---

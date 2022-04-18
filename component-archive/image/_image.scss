@@ -28,7 +28,7 @@
   }
 
   // the hi-res image may have a sligly different height. That may be due to the low-res
-  // image size being restricked to fewer steps when generating the image. To avoid the
+  // image size being restricted to fewer steps when generating the image. To avoid the
   // low-res showing under the high-res image, the low-res will be faded out as the high
   // res is faded in
   &.done {
