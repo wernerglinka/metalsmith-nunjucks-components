@@ -108,12 +108,6 @@ Metalsmith(__dirname)
   .use(layouts(templateConfig))
 
   .use(
-    metalsmithSafeLinks({
-      hostnames: ["metalsmith-components.netlify.app/", "localhost:3000/"],
-    })
-  )
-
-  .use(
     prism({
       lineNumbers: true,
       decode: true,
