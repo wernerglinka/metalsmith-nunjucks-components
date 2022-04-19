@@ -1,0 +1,25 @@
+{% from "../partials/ctas.njk" import ctas %}
+{% from "../partials/text.njk" import text %}
+{% from "../partials/list.njk" import list %}
+
+
+{# this section receives props params and site #}
+
+<section 
+  class="section-badges {{ params.sectionClass }}{{ " paddingTop" if params.paddingTop }}{{ " paddingBottom" if params.paddingBottom }}">
+  <div class="content">
+    
+    {{ text(params.text)}}
+
+    {# list source is specified in the params. Source is metadata object that was built from data files #}
+    {% if params.list.source === "awards" %}
+      {% set source = awards %}
+    {% endif %}
+    {{ list(params.list, source, site)}}
+        
+    {% if params.hasCtas %}
+      {{ ctas(params.ctas) }}
+    {% endif %}
+    
+  </div>
+</section>

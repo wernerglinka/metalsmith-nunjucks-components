@@ -68,7 +68,7 @@ sections:
   - section: cta-banner
     sectionClass: "example"
     animateSection: true
-    inContainer: true
+    inContainer: false
     hasBackground: true
     backgroundColor: "#fca311"
     backgroundIsDark: false

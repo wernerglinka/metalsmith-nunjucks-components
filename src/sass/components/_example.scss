@@ -30,3 +30,54 @@
       margin-top: 10px;
     }
 }
+
+.section-badges.example {
+  max-width: var(--max-width-desktop);
+  margin: 0 auto;
+  padding: 20px; 
+  border: 2px solid #f0f0f0;  
+
+  h2 {
+    font-weight: 300;
+    margin: 0 0 10px !important;
+    text-align: center;
+
+    @media(max-width: $tablet-breakpoint) {
+      font-size: 2rem;
+      margin: 20px 0 10px !important;
+    }
+  }
+  .sub-title {
+    text-align: center;
+  }
+  .prose {
+    text-align: center;
+  }
+
+  .badges-list {
+    li {
+      padding: 30px;
+    }
+    h4 {
+      display: none;
+
+      & + div {
+        display:  none
+      }
+    }
+    a {
+      display: block;
+
+      &:hover {
+        opacity: 0.4;
+        transition: opacity 0.3s ease-in-out;
+      }
+    }
+    
+  }
+
+  .ctas {
+    text-align: center;
+  }
+
+}

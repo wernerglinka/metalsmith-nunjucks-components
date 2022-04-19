@@ -1,0 +1,22 @@
+.badges-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
+  li {
+    max-width: 140px;
+  }
+
+  .icon-wrapper {
+    width: 100px;
+    height: 100px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

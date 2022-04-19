@@ -54,6 +54,7 @@
     "metalsmith-html-minifier": "^4.0.1",
     "metalsmith-if": "^0.1.1",
     "metalsmith-prism": "github:wernerglinka/metalsmith-prism",
+    "metalsmith-safe-links": "^1.0.7",
     "metalsmith-static-files": "^0.1.0",
     "postcss-preset-env": "^7.4.2"
   },

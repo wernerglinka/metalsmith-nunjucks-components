@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Award1",
+    "url": "https://www.youtube.com/watch?v=Cgl4jdI9zRg",
+    "image": "",
+    "icon": "feather",
+    "description": "Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+    "show": true
+  },
+  {
+    "title": "Award2",
+    "url": "",
+    "image": "v1650325427/metalsmith-components/awards/award6_sono17.jpg",
+    "description": "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.",
+    "show": true
+  },
+  {
+    "title": "Award3",
+    "url": "",
+    "image": "v1650325427/metalsmith-components/awards/award3_ct4nrh.jpg",
+    "description": "Fusce dapibus, tellus ac cursus commodo, tortor mauris.",
+    "show": true
+  },
+  {
+    "title": "Award4",
+    "url": "https://www.youtube.com/watch?v=EcHiDVv-2xw",
+    "image": "v1650325427/metalsmith-components/awards/award1_s925ma.jpg",
+    "description": "Maecenas faucibus mollis interdum.",
+    "show": true
+  },
+  {
+    "title": "Award5",
+    "url": "",
+    "image": "v1650325427/metalsmith-components/awards/award4_oehdu3.jpg",
+    "description": "Curabitur blandit tempus porttitor.",
+    "show": true
+  },
+  {
+    "title": "Award6",
+    "url": "",
+    "image": "v1650325427/metalsmith-components/awards/award5_whkzuo.jpg",
+    "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+    "show": false
+  }
+]
+

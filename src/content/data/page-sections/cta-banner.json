@@ -1,7 +1,7 @@
 [
   {
     "name": "CTA Banner",
-    "thumbnail": "",
+    "thumbnail": "v1650323787/metalsmith-components/base-thumbnails/cta-banner_pq1dgs.jpg",
     "description": "A banner with the primary call to action on the page.",
     "link": "/page-sections/cta-banner"
   }

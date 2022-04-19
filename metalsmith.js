@@ -12,6 +12,7 @@ const metadata = require("@metalsmith/metadata");
 const when = require("metalsmith-if");
 const htmlMinifier = require("metalsmith-html-minifier");
 const assets = require("metalsmith-static-files");
+const metalsmithSafeLinks = require("metalsmith-safe-links");
 
 const prism = require("metalsmith-prism");
 
@@ -37,6 +38,18 @@ const mdToHTML = mdString => {
   }
 };
 
+const filterList = (list, selections) => {
+  const filterredList = [];
+  for (let i = 0; i < list.length; i++) {
+    for (let j = 0; j < selections.length; j++) {
+      if (list[i].title === selections[j].title) {
+        filterredList.push(list[i]);
+      }
+    }
+  }
+  return filterredList;
+};
+
 // Define engine options for the inplace and layouts plugins
 const templateConfig = {
   directory: "templates",
@@ -50,6 +63,7 @@ const templateConfig = {
       blogDate,
       trimSlashes,
       mdToHTML,
+      filterList,
     },
   },
 };
@@ -72,6 +86,7 @@ Metalsmith(__dirname)
       social: "src/content/data/social-links.json",
       components: "src/content/data/base-components",
       pageSections: "src/content/data/page-sections",
+      awards: "src/content/data/awards.json",
     })
   )
 
@@ -91,6 +106,12 @@ Metalsmith(__dirname)
   .use(permalinks())
 
   .use(layouts(templateConfig))
+
+  .use(
+    metalsmithSafeLinks({
+      hostnames: ["metalsmith-components.netlify.app/", "localhost:3000/"],
+    })
+  )
 
   .use(
     prism({

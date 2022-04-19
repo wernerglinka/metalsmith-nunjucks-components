@@ -1,0 +1,81 @@
+{% from "../partials/icon.njk" import icon %}
+
+{% macro list(info, source, siteMeta) %}
+  {% if info.title %}
+    {% if info.header === "h1" %}
+      <h1>{{ info.title }}</h1>
+    {% elif info.header === "h2" %}
+      <h2>{{ info.title }}</h2>
+    {% else %}
+      <h3>{{ info.title }}</h3>
+    {% endif %}
+  {% endif %}
+
+  {% if info.subTitle %}
+    <p class="sub-title">{{ info.subTitle }}</p>
+  {% endif %}
+
+  {% if info.prose %}
+    <div class="prose{% if info.hasColumns %} hasColumns{% endif %}">{{ info.prose | mdToHTML | safe }}</div>
+  {% endif %}
+
+  
+
+  <ul class="badges-list {info.source}-list">
+    {# filter the list with selection from frontmatter #}
+    {% for item in source | filterList(info.selections) %}
+
+      {% if item.show %}
+      <li>
+        {% if item.url %}
+        <a href="{{ item.url }}">
+          
+          {% if item.image %}
+          {% set imagesrc = siteMeta.imagePrefix ~ "w_100,c_fill,g_auto,f_auto/" ~ item.image %}
+          <img src="{{ imagesrc }}" alt="{{ item.title }}">
+          {% endif %}
+
+          {% if item.icon %}
+          {% set iconSource = item.icon %}
+          {{ icon(iconSource) }}
+          {% endif %}
+          
+          {% if item.title %}
+          <h4>{{ item.title }}</h4>
+          {% endif %}
+          
+          {% if item.description %}
+          <div>{{ item.description | mdToHTML | safe }}</div>
+          {% endif %}
+
+        </a>
+
+        {% else %}
+
+        <span>
+          
+          {% if item.image %}
+          {% set imagesrc = siteMeta.imagePrefix ~ "w_100,c_fill,g_auto,f_auto/" ~ item.image %}
+          <img src="{{ imagesrc }}" alt="{{ item.title }}">
+          {% endif %}
+
+          {% if item.icon %}
+          {% set iconSource = item.icon %}
+          {{ icon(iconSource) }}
+          {% endif %}
+          
+          {% if item.title %}
+          <h4>{{ item.title }}</h4>
+          {% endif %}
+          
+          {% if item.description %}
+          <div>{{ item.description | mdToHTML | safe }}</div>
+          {% endif %}
+
+        </span>
+        {% endif %}
+      </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endmacro %}

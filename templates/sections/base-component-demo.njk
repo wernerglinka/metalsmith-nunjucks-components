@@ -1,9 +1,11 @@
 {% from "../partials/ctas.njk" import ctas %}
 {% from "../partials/responsive-image.njk" import responsiveImage %}
 {% from "../partials/text.njk" import text %}
+{% from "../partials/list.njk" import list %}
 {% from "../partials/icon.njk" import icon %}
 {% from "../partials/video.njk" import video %}
 {% from "../partials/audio.njk" import audio %}
+
 
 {# this section receives props params and site #}
 
@@ -15,6 +17,14 @@
       
         {% if params.component === "text" %}
           {{ text(params.text)}}
+        {% endif %}
+
+        {% if params.component === "list" %}
+          {# list source is specified in the params. Source is metadata object that was built from data files #}
+          {% if params.list.source === "awards" %}
+            {% set source = awards %}
+          {% endif %}
+          {{ list(params.list, source, site)}}
         {% endif %}
       
         {% if params.component === "ctas" %}

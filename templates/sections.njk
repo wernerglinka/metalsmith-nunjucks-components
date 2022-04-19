@@ -12,7 +12,7 @@
       
       <div class="section-wrapper{{ " inContainer" if section.inContainer }} {{ " marginTop" if section.marginTop }} {{ " marginBottom" if section.marginBottom }} {{ " backgroundDark" if section.backgroundIsDark}}" {% if section.hasBackground %} style="background-color:{{ section.backgroundColor }};"{% endif %}>
         {# site and components are metadata #}
-        {{ component(name, params, site, components, pageSections) }}
+        {{ component(name, params, site, components, pageSections, awards) }}
       </div>
 
     {% else %}
