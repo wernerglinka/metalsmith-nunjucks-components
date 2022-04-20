@@ -12,7 +12,7 @@ const metadata = require("@metalsmith/metadata");
 const when = require("metalsmith-if");
 const htmlMinifier = require("metalsmith-html-minifier");
 const assets = require("metalsmith-static-files");
-const metalsmithSafeLinks = require("metalsmith-safe-links");
+const processLinks = require("metalsmith-safe-links");
 
 const prism = require("metalsmith-prism");
 
@@ -106,6 +106,12 @@ Metalsmith(__dirname)
   .use(permalinks())
 
   .use(layouts(templateConfig))
+
+  .use(
+    processLinks({
+      hostnames: ["metalsmith-components.netlify.app", "localhost"],
+    })
+  )
 
   .use(
     prism({
