@@ -76,7 +76,6 @@ sections:
     marginBottom: true
     paddingTop: false
     paddingBottom: false
-    reverse: false
     text:
       title: Leave long-text pages behind and build better Websites.
       header: "h2"

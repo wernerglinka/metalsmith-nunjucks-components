@@ -22,7 +22,8 @@
         {% if params.component === "list" %}
           {# list source is specified in the params. Source is metadata object that was built from data files #}
           {% if params.list.source === "awards" %}
-            {% set source = awards %}
+            {# filter awards by selections #}
+            {% set source = awards | filterList(params.list.selections) %}
           {% endif %}
           {{ list(params.list, source, site)}}
         {% endif %}
